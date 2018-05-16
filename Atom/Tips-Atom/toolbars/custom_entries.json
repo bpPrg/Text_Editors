@@ -1,0 +1,226 @@
+[
+  {
+  "type": "button",
+  "tooltip": "Settings",
+  "callback": "application:show-preferences",
+  "icon": "cog",
+  "iconset": "fa"
+  },
+  {
+  "type": "button",
+  "tooltip": "Command Pallette",
+  "callback": "application:show-preferences",
+  "icon": "ios-home",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Find and Replace",
+  "callback": "find-and-replace:show",
+  "icon": "search",
+  "iconset": "fa"
+  },
+  {
+  "type": "button",
+  "tooltip": "Save All",
+  "callback": "window:save-all",
+  "icon": "save",
+  "iconset": "fa"
+  },
+  {
+  "type": "button",
+  "tooltip": "Code Fold",
+  "callback": "editor:fold-current-row",
+  "icon": "level-down",
+  "iconset": "fa"
+  },
+  {
+  "type": "button",
+  "tooltip": "Code Fold All",
+  "callback": "editor:fold-all",
+  "icon": "android-arrow-dropdown",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Code Unfold All",
+  "callback": "editor:unfold-all",
+  "icon": "android-arrow-dropup",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Split and move right",
+  "callback": "pane:split-right-and-copy-active-item",
+  "icon": "format-horizontal-align-center",
+  "iconset": "mdi"
+  },
+  {
+  "type": "button",
+  "tooltip": "MPI execute",
+  "callback": "atom-shell-commands:mpiexec",
+  "icon": "at",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Run Options",
+  "callback": "script:run-options",
+  "icon": "android-archive",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Run With profile",
+  "callback": "script:run-with-profile",
+  "icon": "ios-shuffle",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Run script",
+  "callback": "script:run",
+  "icon": "play",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Stop script",
+  "callback": "script:kill-process",
+  "icon": "stop",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Preview Markdown",
+  "callback": "markdown-preview-enhanced:toggle",
+  "icon": "ios-color-wand",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Preview reST",
+  "callback": "rst-preview-pandoc:toggle",
+  "icon": "ios-color-wand-outline",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Advanced Open Files",
+  "callback": "advanced-open-file:toggle",
+  "icon": "android-folder-open",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Open file in Finder",
+  "callback": "tree-view:show-current-file-in-file-manager",
+  "icon": "android-open",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Matching Bracket",
+  "callback": "bracket-matcher:go-to-matching-bracket",
+  "icon": "arrow-move",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Sequential Numbers",
+  "callback": "sequential-number:open",
+  "icon": "calculator",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Toggle Tree-view",
+  "callback": "tree-view:toggle",
+  "icon": "android-radio-button-off",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Toggle Minimap",
+  "callback": "minimap:toggle",
+  "icon": "android-radio-button-on",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "git plus: pull",
+  "callback": "git-plus:pull",
+  "icon": "android-arrow-down",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Git commands",
+  "callback": "git-plus:run",
+  "icon": "social-github",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "git plus:commit-all-and-push",
+  "callback": "git-plus:commit-all-and-push",
+  "icon": "android-arrow-up",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "git-plus:add commit and push",
+  "callback": "git-plus:add-commit-and-push",
+  "icon": "arrow-graph-up-right",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "All Tabs to Whitespaces",
+  "callback": "whitespace:convert-all-tabs-to-spaces",
+  "icon": "android-expand",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Save Without Trailing Whitespaces",
+  "callback": "whitespace:save-without-trailing-whitespace",
+  "icon": "android-contract",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Select Grammar",
+  "callback": "grammar-selector:show",
+  "icon": "ios-book",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Go To Line",
+  "callback": "go-to-line:toggle",
+  "icon": "android-checkbox",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Multiple Paste",
+  "callback": "clipboard-plus:toggle",
+  "icon": "android-color-palette",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Restart atom",
+  "callback": "restart-atom:restart",
+  "icon": "android-sync",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "External Terminal",
+  "callback": "open-terminal-here:open",
+  "icon": "code-working",
+  "iconset": "ion"
+  }
+]

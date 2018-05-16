@@ -1,0 +1,90 @@
+********************************************************************************
+# ==============================================================================
+# Author : Bhishan Poudel; PhD Student Ohio University
+# Email  : bhishanpdl@gmail.com
+# Date   : Sep 16, 2017 259
+# Topic  : Atom keyboard shortcuts
+# ==============================================================================
+
+
+1. some keybindings
+# Atom basic tools
+'shift-enter': 'script:run'
+'alt-left': 'tree-view:toggle'  # sidebar showing first opened project
+'cmd-;': 'command-palette:toggle'
+# Line manipulations
+'cmd-l': 'editor:select-line'
+'cmd-d': 'editor:duplicate-lines'
+'cmd-k': 'editor:delete-line'
+'cmd-/': 'editor:toggle-line-comments'
+'cmd-shift-d': 'editor:duplicate-line'
+'cmd-ctrl-up': 'editor:move-line-up'
+'cmd-ctrl-down': 'editor:move-line-down'
+'ctrl-shift-k': 'editor:delete-line'
+# Bookmarks
+'cmd-1': 'bookmarks:jump-to-previous-bookmark'
+'cmd-2': 'bookmarks:toggle-bookmark'
+'cmd-3': 'bookmarks:jump-to-next-bookmark'
+'cmd-9': 'bookmarks:view-all'
+'cmd-0': 'bookmarks:clear-bookmarks'
+'alt-/': 'advanced-open-file:toggle'
+'cmd-alt-o': 'advanced-open-file:toggle'
+# Atom-shell-commands
+'ctrl-9' : 'atom-shell-commands-config:error-next'
+'ctrl-10': 'atom-shell-commands-config:error-prev'
+# Mixed
+'cmd-alt-s': 'spell-check:toggle'
+'ctrl-cmd-m': 'bracket-matcher:select-inside-brackets'
+'ctrl-alt-e': 'python-tools:select-all-string'
+'alt-cmd-t': 'change-case:title'
+'ctrl-shift-d': 'date:date'
+'ctrl-alt-p': 'preview-inline:show'
+# My custom commands **init.coffee**
+'ctrl-shift-o': 'custom:open-todo-list'
+'ctrl-b': 'custom:open-bashrc'
+'ctrl-p': 'custom:open-pros'
+'ctrl-l': 'custom:open-prosLog'
+'ctrl-r': 'custom:open-runjedimaster'
+# open this package open file under cursor
+'ctrl-o': 'open-this:here'
+# expand selection
+'alt-up': 'expand-region:expand'
+'alt-down': 'expand-region:shrink'
+# atom-column-select
+'alt-shift-up': 'column-select:up'
+'alt-shift-down': 'column-select:down'
+# Toggler 0 to 1 etc
+'alt-t': 'toggler:toggle'
+# editor SELECTIONS
+'shift-up': 'editor:select-up'
+'shift-down': 'editor:select-down'
+'shift-left': 'editor:select-left'
+'shift-right': 'editor:select-right'
+'ctrl-shift-w': 'editor:select-word'
+# Multiple Selection Above/Below
+'cmd-shift-up': 'editor:add-selection-above'
+'cmd-shift-down': 'editor:add-selection-below'
+'cmd-shift-right': 'editor:select-to-end-of-line'
+'cmd-shift-left': 'editor:select-to-beginning-of-line'
+# SPELL -CHECK
+'alt-shift-s': 'spell-check:toggle'
+'cmd-shift-t': 'spell-check:correct-misspelling'
+# sort lines
+'ctrl-s ctrl-s': 'sort-lines:sort'
+'ctrl-s ctrl-n': 'sort-lines:natural'
+'ctrl-s ctrl-u': 'sort-lines:unique'
+'ctrl-s ctrl-c': 'sort-lines:case-insensitive-sort'
+'ctrl-s ctrl-r': 'sort-lines:reverse-sort'
+# Sequential Number (multiple click, or cmd-shifit-up) after that
+# ctrl alt 0, then type 0 gives 0 1 2
+# typing 5+2 gives 5,7,9 etc
+'ctrl-alt-0': 'sequential-number:open'
+
+
+
+3. insert sequential number
+ctrl click the places or click a place, then cmd-shift-up
+ctrl alt 0  then for 5 to rest:  just type 5
+                 : for increment 5 + 2  give 5,7,9 etc
+                 : for decrement 5 - 2 gives 5,3,1 etc
+                 : for increment 0027 + 3 gives 0027, 0030 etc

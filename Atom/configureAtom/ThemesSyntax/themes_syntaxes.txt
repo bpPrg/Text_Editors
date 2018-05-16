@@ -1,0 +1,24 @@
+Author: Bhishan Poudel
+Date  : Sep 16, 2017 Sat
+
+Topic: To install Themes and Syntaxes in Atom
+==================================================
+
+1. Add the package manager apm to the PATH
+
+The package manager for atom is apm  ==> atom package manager
+
+locate apm
+/Users/poudel/Applications/Atom.app/Contents/Resources/app/apm/bin/apm
+
+add this to path in ~/.bash_profile:
+export PATH=$PATH:/Users/poudel/Applications/Atom.app/Contents/Resources/app/apm/bin
+
+2. Install the package using apm
+
+apm install pen-paper-coffee-syntax
+
+(google atom syntaxes or atom themes)
+
+3. Quit the atom and open again.
+Go the settings and select the syntax.

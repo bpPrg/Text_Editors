@@ -1,0 +1,34 @@
+1. delete ~/.atom
+
+2. open atom, it will create brand new .atom
+
+3. install some languages
+
+4. install some packages not too many
+
+tool-bar
+toolbar almighty  # then use custom_entries and override original file.
+script # settings make cwd script directory
+date # change format to  MMM D, YYYY  i.e. Oct 3, 2017
+plain simple
+restart atom
+open-terminal-here
+language restructuredtext
+language markdown
+advanced open file
+markdown-preview-enhanced
+# disable markdown-preview old package, and choose enhnaced mode mathjax.
+rst-preview-pandoc
+sequential number
+
+sort lines
+
+
+for fun
+========
+file icons
+
+
+Special
+========
+wakatime

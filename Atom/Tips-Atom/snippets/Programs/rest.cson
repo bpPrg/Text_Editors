@@ -1,0 +1,189 @@
+##==============================================================================
+##  Language reStructuredText (*.rst)
+##==============================================================================
+'.text.restructuredtext':
+    'Header':
+        'prefix': 'hdr'
+        'body': '.. contents:: Table of Contents\n   :depth: 3\n\n'
+
+    'Contents':
+        'prefix': 'contents'
+        'body': '.. contents:: Table of Contents\n   :depth: 3\n\n'
+
+    'Toc Tree':
+        'prefix': 'toc'
+        'body': '.. toctree::\n   :maxdepth: 4\n\n   $1'
+
+    'Header 1 #':
+        'prefix': 'ha'
+        'body': '$1\n################################################################################\n\n'
+
+    'Header 2 *':
+        'prefix': 'hb'
+        'body': '$1\n********************************************************************************\n\n'
+
+    'Header 3 =':
+        'prefix': 'hc'
+        'body': '$1\n================================================================================\n\n'
+
+    'Header 4 -':
+        'prefix': 'hd'
+        'body': '$1\n--------------------------------------------------------------------------------\n\n'
+
+    'Header 5 ^':
+        'prefix': 'he'
+        'body': '$1\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n'
+
+    'Header 6 "':
+        'prefix': 'hf'
+        'body': '$1\n""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""\n\n'
+
+    'Image':
+        'prefix': 'img'
+        'body': '.. image:: ../../code/images/$1.png\n\n$2'
+
+        #'body': '.. image:: ../images/$1.png\n   :height: 100px\n   :width: 400 px\n   :align: center\n'
+
+    'Figure':
+        'prefix': 'fig'
+        'body': '\n.. figure:: ../images/a.png\n    :width: 200px\n    :align: center\n    :height: 100px\n    :alt: alternate text\n    :figclass: align-center\n\n    This is caption.\n'
+
+    'Footnote':
+        'prefix': 'footnote'
+        'body': '[#f1]_  \n\n.. rubric:: Footnotes\n\n.. [#f1] Text of the first footnote.\n\n'
+
+    'Cite':
+        'prefix': 'cite'
+        'body': '[book]_ \n\n.. [book] Name of book'
+
+    'Link':
+        'prefix': 'link'
+        'body': '`Link text <$1>`_'
+
+    'Link Two Lines':
+        'prefix': 'link2'
+        'body': '`a link`_.\n\n.. _a link: $1\n\n'
+
+    'Table':
+        'prefix': 'tbl'
+        'body': '\n\n=====  =====  =======\nA      B      A and B\n=====  =====  =======\nF      F      F\nT      F      F\nF      T      F\nT      T      T\n=====  =====  =======\n\n'
+
+    'Table Large':
+        'prefix': 'tbl2'
+        'body': '\n\n+------------------------+------------+----------+----------+\n| Header1                | Header 2   | Header 3 | Header 4 |\n+========================+============+==========+==========+\n| ..                     | 12         |   13     | 14       |\n+------------------------+------------+----------+----------+\n| 21                     | 22         | 23       |       24 |\n+------------------------+------------+----------+----------+\n\n'
+
+    'Subscript_ss':
+        'prefix': 'ss'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sub:`2`\ O\n'
+
+    'Subscript':
+        'prefix': 'subscript'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sub:`2`\ O\n'
+
+    'Superscript':
+        'prefix': 'superscript'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sup:`2`\ O\n'
+
+    'Superscript_ss2':
+        'prefix': 'ss2'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sup:`2`\ O\n'
+
+    'Code':
+        'prefix': 'code'
+        'body': '::\n\n    $1.'
+
+    'New Line':
+        'prefix': 'n'
+        'body': '\n    $1'
+
+    'New Line Longer':
+        'prefix': 'nn'
+        'body': '\n| $1\n| $2'
+
+    'Doctest':
+        'prefix': 'doc'
+        'body': '>>> print ("This is a Doctest block")\nThis is a Doctest block'
+
+    'Hlist':
+        'prefix': 'hlist'
+        'body': '.. hlist::\n   :columns: 3\n\n   * A list of\n   * short items\n   * that should be\n   * displayed\n   * horizontally\n\n'
+
+    'Admonition Seealso':
+        'prefix': 'seealso'
+        'body': '.. seealso::\n\n   $1'
+
+    'Admonition Note':
+        'prefix': 'note'
+        'body': '.. note::\n\n   $1'
+
+    'Admonition Seealso Longer':
+        'prefix': 'seealsoo'
+        'body': '.. seealso::\n   Module :py:mod:`zipfile`\n      Documentation of the :py:mod:`zipfile` standard module.\n\n   `GNU tar manual, Basic Tar Format <http://link>`_\n      Documentation for tar archive files, including GNU tar extensions.\n'
+
+    'Admonition Warning':
+        'prefix': 'warning'
+        'body': '.. warning::\n\n   $1'
+
+    'Admonition Todo':
+        'prefix': 'todo'
+        'body': '.. admonition:: todo\n\n   $1'
+
+    'Admonition Info':
+        'prefix': 'info'
+        'body': '.. admonition:: Info\n\n   $1'
+
+    'Math Inline':
+        'prefix': 'mth'
+        'body': ':math:`$1`$0'
+
+    'Math':
+        'prefix': 'math'
+        'body': '''
+        .. math::
+            
+          $1
+        '''
+
+    'Sum':
+        'prefix': 'sum'
+        'body': '\\\\sum_{n=1}^N $0'
+
+    'Math Longer':
+        'prefix': 'maths'
+        'body': '.. math::\n\n    n_{\mathrm{offset}} = \sum_{k=0}^{N-1} s_k n_k\n'
+
+    'Topic':
+        'prefix': 'topic'
+        'body': '.. topic:: Topic\n\n    $1.'
+
+    'Sidebar':
+        'prefix': 'sidebar'
+        'body': '.. sidebar:: Sidebar\n\n   $1.'
+
+    'Test Code':
+        'prefix': 'test'
+        'body': '.. testcode::\n\n    print("hi")\n\n.. testoutput::\n\n    hi\n'
+
+    'Class':
+        'prefix': 'class'
+        'body': ':class:`~className` '
+
+    'Method':
+        'prefix': 'meth'
+        'body': ':meth:`~className.method`'
+
+    'Single Index':
+        'prefix': 'single_index'
+        'body': '..  index::\nsingle: Pythagoras # gives bad>poetry and poetry>bad.'
+
+    'Paired Index':
+        'prefix': 'paired_index'
+        'body': '..  index::\npair: poetry; bad # gives bad>poetry and poetry>bad.'
+
+    'Frac Command':
+        'prefix': 'fr'
+        'body': '\\\\frac{$1}{$2}'
+
+    'Frac Command frac':
+        'prefix': 'frac'
+        'body': '\\\\frac{$1}{$2}'

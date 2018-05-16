@@ -1,0 +1,9 @@
+Author: Bhishan Poudel
+Date  :  Oct 18, 2017
+
+Topic: Run C program in Atom
+====================================
+
+1. Install package gcc-make-run
+
+2. press f6  or cmd-f6

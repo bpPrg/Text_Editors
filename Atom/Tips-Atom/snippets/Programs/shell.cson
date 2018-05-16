@@ -1,0 +1,70 @@
+##=======================================================================
+## Bash Shell Snippets
+##=======================================================================
+'.source.shell':
+   'Header':
+     'prefix': 'h'
+     'body': '''
+      #!bash
+      #
+      ###########################################################
+      # Author: Bhishan Poudel
+      # Date  : $1
+      # Topic : $2
+      ###########################################################
+      #
+      $0
+     '''
+
+   'Header with hdr':
+     'prefix': 'hdr'
+     'body': '''
+      #!bash
+      #
+      ###########################################################
+      # Author: Bhishan Poudel
+      # Date  : $1
+      # Topic : $2
+      ###########################################################
+      #
+      $0
+     '''
+
+   'for loop':
+     'prefix': 'for'
+     'body': '''
+     for f in *.pdf; do echo $f; done;
+     for item in $(echo foo bar baz); do echo $item; done
+     for num in {0..9}; do echo $num; done
+     '''
+
+   'pdf combine':
+     'prefix': 'pdf'
+     'body': '''
+     gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=out.pdf in1.pdf in2.pdf
+     '''
+
+   # this shows tree of folders excluding files.
+   'folders':
+     'prefix': 'folders'
+     'body': '''
+     ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
+     '''
+
+   '10 most used commands':
+     'prefix': 'mostused'
+     'body': '''
+     history | awk '{print $2}' | awk 'BEGIN {FS="|"}{print $1}' | sort | uniq -c | sort -n | tail | sort -nr
+     '''
+
+   'function fun':
+     'prefix': 'fun'
+     'body': '''
+     function mkcd () { mkdir -p $1; cd $1; }
+     '''
+
+   'function function':
+     'prefix': 'function'
+     'body': '''
+     function mkcd () { mkdir -p $1; cd $1; }
+     '''

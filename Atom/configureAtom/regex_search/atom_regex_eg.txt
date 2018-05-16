@@ -1,0 +1,35 @@
+Date: oct 30, 2016
+
+Regex examples
+===============
+NOTE:
+Regex Example Check Online: https://www.debuggex.com/
+
+cmd f  Find and Replace Toolbar
+cmd l  select line
+cmd j  join lines (hit repeateadly)
+
+*. is Regex Search
+Triple Line is Search in Selection Only
+
+1.
+From: alert: "\f101";
+To: alert
+
+Find: (.*):.*
+Replace: $1
+
+
+2. regex search in atom
+From: $400 is for matt who lives in room 20.
+To:   Dollar 400 is for matt who lives in room 20.
+
+Find: \$([0-9]+)
+Replace: Dollar 400
+
+3.
+From:     1 import numpy as np
+To:       import numpy as np
+
+Find: ([0-9]+ )(*)
+Replace: $2

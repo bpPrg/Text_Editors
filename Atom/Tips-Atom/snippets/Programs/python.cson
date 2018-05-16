@@ -1,0 +1,765 @@
+##==============================================================================
+##          Python SNIPPETS
+##==============================================================================
+'.source.python':
+    'Example of snippet in atom':
+        'prefix': 'egsni'
+        'body': '''
+        This is line 1 and placeholder ${1:arg1}.
+        This is line 2 and another placeholder ${2:arg2}.
+        $0
+        '''
+        'description': '''
+        This description is optional.
+        This is an example of using snippets in Atom text editor.
+        My custom snippets starts with letter x.
+        To create snippets go to Atom > Snippets and add snippets.
+        To find the scope name go to Atom > preferences > packages >
+           type language > click settings > see things like source.c
+           DO NOT click on link, CLICK  settings.
+        '''
+
+    #======================== Python Typos Begin ==============================
+    'the':
+        'prefix': 'hte'
+        'body': 'the'
+        'matirx':
+            'prefix': 'matirx'
+            'body': 'matrix'
+
+    #======================== Python Typos End ================================
+    #======================== Python Canopy Begin ==============================
+    'fitscreate':
+        'prefix': 'fitscreate'
+        'body': '''
+        #!python
+        # -*- coding: utf-8 -*-#
+        """
+        Create fitsfile.
+    
+        @author: Bhishan Poudel
+    
+        @date:  Feb 20, 2018
+    
+        """
+        # Imports
+    
+        import numpy as np
+        from astropy.io import fits
+    
+        def create_fitsfile(outfile):
+            data = np.arange(1,21).reshape(4,5)
+            print(data)
+    
+            fits.writeto(outfile,data,clobber=True)
+    
+        def main():
+            """Run main function."""
+            outfile = 'a.fits'
+            create_fitsfile(outfile)
+    
+        if __name__ == "__main__":
+            main()
+        '''
+    #======================== Python Canopy End ================================
+    #======================== Python Fitsfile Begin ==============================
+    'canopy':
+        'prefix': 'canopy'
+        'body': '#!/Users/poudel/Library/Enthought/Canopy/edm/envs/python2/bin/python'
+    #======================== Python Fitsfile End ================================
+    #======================= Functions Begin ==================================        
+    'run parallel':
+        'prefix': 'parallel'
+        'body': '''
+                def runInParallel(*fns):
+                    # import
+                    from multiprocessing import Process
+    
+                    # processes
+                    proc = []
+                    for fn in fns:
+                        p = Process(target=fn)
+                        p.start()
+                        proc.append(p)
+                    for p in proc:
+                        p.join()
+                fns = [$1]
+                runInParallel(*fns)
+    
+            '''
+    
+    #======================= Functions End   ==================================
+    #======================= Plotting Begin ==================================
+    'import matplotlib.pyplot':
+        'prefix': 'plt'
+        'body': 'import matplotlib.pyplot as plt'
+    'savefig':
+        'prefix': 'save'
+        'body': 'plt.savefig("$1.png",dpi = 200, height = 14, width = 14)\n'
+    'plt title':
+        'prefix': 'pt'
+        'body': 'plt.title("$1")'
+    
+    'Table Plot':
+        'prefix': 'table_plot'
+        'body': '''
+        fig, ax =plt.subplots()
+        table_data = np.random.random((10,3))
+        collabel=("c1", "c2", "c3")
+        ax.axis('tight')
+        ax.axis('off')
+        the_table = ax.table(cellText=table_data,colLabels=collabel,loc='center')
+        ax.plot(table_data[:,0],table_data[:,1])
+        plt.show()
+        '''
+    #======================= Plotting End  =================================
+    #======================= Imports Begin =================================    
+    'future':
+        'prefix': 'future'
+        'body': 'from __future__ import print_function, division,with_statement,unicode_literals,absolute_import'
+    
+    'import numpy np':
+        'prefix': 'np'
+        'body': 'import numpy as np'
+    
+    'import pandas':
+        'prefix': 'pd'
+        'body': 'import pandas as pd'
+    
+    'import scipy':
+        'prefix': 'sp'
+        'body': 'import scipy as sp'
+    
+    'import os et al':
+        'prefix': 'os'
+        'body': 'import os,sys,argparse'
+    
+    'import astropy':
+        'prefix': 'ap'
+        'body': 'import astropy.io'
+    
+    'import astropy fits':
+        'prefix': 'fits'
+        'body': 'from astropy.io import fits'
+    
+    'import astropy fits getheader':
+        'prefix': 'getheader'
+        'body': 'from astropy.io.fits import getheader'
+    
+    'import astropy fits getval':
+        'prefix': 'getval'
+        'body': 'from astropy.io.fits import getval'
+    
+    'import astropy fits getdata':
+        'prefix': 'getdata'
+        'body': 'from astropy.io.fits import getdata'
+    
+    'import multiprocessing':
+        'prefix': 'mp'
+        'body': 'mp=import multiprocessing as mp'
+    
+    'import tqdm':
+        'prefix': 'tqdm'
+        'body': 'from tqdm import trange'
+    
+    'import glob':
+        'prefix': 'glob'
+        'body': 'import glob'  
+    'statsmodel':
+        'prefix': 'sm'
+        'body': 'import statsmodels.api as sm'  
+    'import poly':
+        'prefix': 'poly'
+        'body': 'import numpy.polynomial.polynomial as poly'
+    
+    'import inner1d':
+        'prefix': 'inner1d'
+        'body': 'from numpy.core.umath_tests import inner1d'
+    
+    'import optimize':
+        'prefix': 'optimize'
+        'body': 'from scipy import optimize'
+    
+    'import optimize opt':
+        'prefix': 'opt'
+        'body': 'from scipy import optimize'
+    
+    'import numpy linalg':
+        'prefix': 'linalg'
+        'body': 'from numpy.linalg import inv,norm,lstsq'
+    
+    'import scikit mse':
+        'prefix': 'mse'
+        'body': 'from sklearn.metrics import mean_squared_error'
+    #======================= Imports End   =================================
+    #======================= Argparse Start  =================================
+    'argparse':
+        'prefix': 'argparse'
+        'body': '''
+        import argparse
+        parser = argparse.ArgumentParser()
+        parser.add_argument("-v", "--verbosity", action="count", default=0)
+        args = parser.parse_args()
+        v = args.verbosity
+        '''
+    'parser add_argument':
+        'prefix': 'addarg'
+        'body': '''
+        parser.add_argument("-$1", "--$2", help="$3" default=None)
+        $2 = parser.$2
+        '''
+    
+    #======================= Argparse  End =================================
+    #======================= Prints Start  =================================
+    'print with format':
+        'prefix': 'prf'
+        'body': 'print( \'\{\}\'.format($1))$0'
+    
+    'print target':
+        'prefix': 'prt'
+        'body': 'print("t = ", t)$0'
+    
+    'print X':
+        'prefix': 'prx'
+        'body': 'print("X = ", X)$0'    
+    
+    'print newline':
+        'prefix': 'prn'
+        'body': 'print("\\\\n")'
+    
+    'print':
+        'prefix': 'prr'
+        'body': 'print("$1")$0'
+    
+    'print variable value':
+        'prefix': 'pr'
+        'body': '''
+        print("$1 = {}".format($1))
+        '''
+    'print with newline':
+        'prefix': 'pn'
+        'body': '''
+        print("$1 = \\\\n{}".format($2))
+        '''
+    
+    'print ## line':
+        'prefix': 'prh'
+        'body': '''
+        print("#"*50)
+        '''
+    
+    'print only':
+        'prefix': 'pri'
+        'body': 'print($0)'
+    
+    '2 decimal points for all elements of list':
+        'prefix': 'prl'
+        'body': '''
+        print([float(str(np.round((xp), 2))) for x in $1])
+        print([ "{:.2e}".format(x) for x in $1])
+        '''
+    'print(a)':
+        'prefix': 'pra'
+        'body': 'print(a)'
+    
+    'print(b)':
+        'prefix': 'prw'
+        'body': 'print(\'w = \', w)'
+    
+    'Print a':
+        'prefix': 'pra'
+        'body': """print('a = ', a)"""
+    
+    'Print b':
+        'prefix': 'prb'
+        'body': """print('b = ', b) """
+    
+    'Print c':
+        'prefix': 'prc'
+        'body': """print('c = ', c) """
+    
+    'Print x':
+        'prefix': 'prx'
+        'body': """print('x = ', x) """
+    
+    'Print y':
+        'prefix': 'pry'
+        'body': """print('y = ', y) """
+    
+    'Print z':
+        'prefix': 'prz'
+        'body': """print('z = ', z) """
+    
+    'Print i':
+        'prefix': 'pri'
+        'body': """print('i = ', i) """
+    
+    'Print Dictionary Key Values':
+        'prefix': 'prd'
+        'body': 'for key, value in config.items():\n    print (key, " = ", value)'
+    
+    'Print List Elements':
+        'prefix': 'prl3'
+        'body': 'for _ in $1:\n    print(_)'
+    
+    #======================= Prints End    =================================
+    #======================= Machine Learning Begin ========================
+    
+    'Append ones':
+        'prefix': 'ones'
+        'body': '''
+        np.append(np.ones_like(ttrain), Xtrain, axis=1)
+        '''
+    
+    'Inverse':
+        'prefix': 'i'
+        'body': '$1^{-1}\ $2'
+    
+    'Power Superscript':
+        'prefix': 'p'
+        'body': '$1^{}\ $2'
+    
+    #==================== Machine Learning End ================================
+    'lines':
+        'prefix': 'lines'
+        'body': '##=======================================================================\n## $1\n\##=======================================================================$0'
+    
+    'Header':
+        'prefix': 'h'
+        'body': '''
+        #!python
+        # -*- coding: utf-8 -*-#
+        """
+        $1
+    
+        @author: Bhishan Poudel
+    
+        @date: $2
+    
+        """
+        # Imports
+        $0
+        '''
+    
+    'Line':
+        'prefix': 'line'
+        'body': '''
+        #===========================================================
+        '''
+    
+    'eg':
+        'prefix': 'eg'
+        'body': '''
+        def eg():
+            $1
+        '''
+    
+    'Header hdr':
+        'prefix': 'hdr'
+        'body': '''#!/Users/poudel/anaconda/bin/python
+        # -*- coding: utf-8 -*-#
+        #
+        # Author    : Bhishan Poudel; Physics Graduate Student, Ohio University
+        # Date      : $1
+        # Last update :
+        # Est time    :
+        #
+        # Imports
+        $2
+        $0
+        '''
+    
+    'NOTE':
+        'prefix': 'note'
+        'body': '''NOTE: 
+            '''
+    
+    'slicing':
+        'prefix': 'slicing'
+        'body': '''
+        data     = np.arange(20).reshape((5,4))
+        col0     = data[:, [0] ]
+        col0a     = data[:, 0 ]
+        col0_1   = data[:, [0,1]]
+        col0_1a  = data[:, :2]
+        not_col0 = data[:, 1:]
+        last_column_array = data[:, -1]
+        last_column_vec = data[:, [-1]]
+        not_last = data[:,:-1]
+        '''
+    
+    'numpy arange for integers':
+        'prefix': 'arange'
+        'body': 'np.arange($1, $2, step = $3) $0'
+    
+    'read columns of file using numpy':
+        'prefix': 'fileread'
+        'body': '''infile = "$1"
+        x = np.genfromtxt(infile, delimiter=None, usecols=(0),
+                          dtype=str, unpack=True)
+        y = np.genfromtxt(infile, delimiter=None, usecols=(1),
+                          dtype=float, unpack=True)
+        $0
+        '''
+    
+    'fileread using pandas':
+        'prefix': 'filereadpd'
+        'body': '''infile = "$1"
+        colnames = ["col0", "col1"]
+        df = pd.read_csv(infile, sep="\s+", header=None, skiprows=0,
+                         comment="#", names=colnames, usecols=(0, 1))
+        $0
+        '''
+    
+    'function':
+        'prefix': 'def'
+        'body': '''def $1($2):
+                    $3
+                $0
+                '''
+    
+    'function with args':
+        'prefix': 'deff'
+        'body': '''def $1($2):
+                    """$3
+                    
+                    Args:
+                    $2: $5
+                    """
+                    
+                    # $7
+                    $8
+                    
+                    return None
+                $0
+                '''
+        
+    'docstring':
+        'prefix': 'doc'
+        'body': '"""$1"""$0'
+    
+    'def main':
+        'prefix': 'main'
+        'body': '''def main():
+                    """Run main function."""
+                    $1
+                    
+                if __name__ == "__main__":
+                    main()
+                $0
+                '''
+    'if name':
+        'prefix': 'name'
+        'body': '''if __name__ == "__main__":
+                    main()
+                $0
+                '''
+    
+    'time taken to run program':
+        'prefix': 'time'
+        'body': '''
+        import time
+    
+        # beginning time
+        program_begin_time = time.time()
+        begin_ctime        = time.ctime()
+    
+        # Run the program
+        main()
+    
+        # print the time taken
+        program_end_time = time.time()
+        end_ctime        = time.ctime()
+        seconds          = program_end_time - program_begin_time
+        m, s             = divmod(seconds, 60)
+        h, m             = divmod(m, 60)
+        d, h             = divmod(h, 24)
+        print("Begin time: ", begin_ctime)
+        print("End   time: ",  end_ctime, "n")
+        print("Time taken: {0: .0f} days, {1: .0f} hours,\
+              {2: .0f} minutes, {3: f} seconds.".format(d, h, m, s))
+    
+        '''  
+    'def main with time':
+        'prefix': 'maint'
+        'body': '''
+        def main():
+            """Run main function."""
+            $1
+    
+        if __name__ == "__main__":
+                import time, os
+    
+                # Beginning time
+                program_begin_time = time.time()
+                begin_ctime        = time.ctime()
+    
+                #  Run the main program
+                main()
+    
+                # Print the time taken
+                program_end_time = time.time()
+                end_ctime        = time.ctime()
+                seconds          = program_end_time - program_begin_time
+                m, s             = divmod(seconds, 60)
+                h, m             = divmod(m, 60)
+                d, h             = divmod(h, 24)
+                print("\\\\n\\\\nBegin time: ", begin_ctime)
+                print("End   time: ", end_ctime, "\\\\n")
+                print("Time taken: \{0: .0f\} days, \{1: .0f\} hours, \\\\
+                      \{2: .0f\} minutes, \{3: f\} seconds.".format(d, h, m, s))
+                print("End of Program: {}".format(os.path.basename(__file__)))
+                print("\\\\n")
+                $0
+        '''
+    
+    'Dictionary Comprehension':
+        'prefix': 'dc'
+        'body': '{${1:key}: ${2:value} for ${3:key}, ${4:value} in ${5:variable}}'
+    
+    'List Comprehension':
+        'prefix': 'lc'
+        'body': '[${1:value} for ${2:value} in ${3:variable}]'
+    
+    'linspace':
+        'prefix': 'lin'
+        'body': """np.linspace($1,$2,num=$3,endpoint=True)\n"""
+    
+    'arange':
+        'prefix': 'ar'
+        'body': """np.arange($1,$2,step=1)\n"""
+    
+    'subprocess':
+        'prefix': 'sub'
+        'body': """import subprocess"""
+    
+    'subprocess call':
+        'prefix': 'call'
+        'body': """subprocess.call(cmd, shell=True)"""
+    
+     #=============== For rest docstrings in python ===============
+    'Conents docstring':
+        'prefix': 'contentsdoc'
+        'body': '.. contents:: Table of Contents\n   :depth: 3\n\n'
+    
+    'Toc Tree':
+        'prefix': 'toc'
+        'body': '.. toctree::\n   :maxdepth: 4\n\n   $1'
+    
+    'Header 1 #':
+        'prefix': 'ha'
+        'body': '$1\n################################################################################\n\n'
+    
+    'Header 2 *':
+        'prefix': 'hb'
+        'body': '$1\n********************************************************************************\n\n'
+    
+    'Header 3 =':
+        'prefix': 'hc'
+        'body': '$1\n================================================================================\n\n'
+    
+    'Header 4 -':
+        'prefix': 'hd'
+        'body': '$1\n--------------------------------------------------------------------------------\n\n'
+    
+    'Header 5 ^':
+        'prefix': 'he'
+        'body': '$1\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n'
+    
+    'Header 6 "':
+        'prefix': 'hf'
+        'body': '$1\n""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""\n\n'
+    
+    'Image':
+        'prefix': 'img'
+        'body': '.. image:: ../images/$1.png\n   :height: 100px\n   :width: 400 px\n   :align: center\n'
+    
+    'Figure':
+        'prefix': 'fig'
+        'body': '\n.. figure:: ../images/a.png\n    :width: 200px\n    :align: center\n    :height: 100px\n    :alt: alternate text\n    :figclass: align-center\n\n    This is caption.\n'
+    
+    'Footnote':
+        'prefix': 'footnote'
+        'body': '[#f1]_  \n\n.. rubric:: Footnotes\n\n.. [#f1] Text of the first footnote.\n\n'
+    
+    'Cite':
+        'prefix': 'cite'
+        'body': '[book]_ \n\n.. [book] Name of book'
+    
+    'Link':
+        'prefix': 'l'
+        'body': '`Link <$1>`_.'
+    
+    'Link Two Lines':
+        'prefix': 'link'
+        'body': '`a link`_.\n\n.. _a link: $1\n\n'
+    
+    'Table':
+        'prefix': 'tbl'
+        'body': '\n\n=====  =====  =======\nA      B      A and B\n=====  =====  =======\nF      F      F\nT      F      F\nF      T      F\nT      T      T\n=====  =====  =======\n\n'
+    
+    'Table Large':
+        'prefix': 'tbll'
+        'body': '\n\n+------------------------+------------+----------+----------+\n| Header1                | Header 2   | Header 3 | Header 4 |\n+========================+============+==========+==========+\n| ..                     | 12         |   13     | 14       |\n+------------------------+------------+----------+----------+\n| 21                     | 22         | 23       |       24 |\n+------------------------+------------+----------+----------+\n\n'
+    
+    'Subscript_ss':
+        'prefix': 'ss'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sub:`2`\ O\n'
+    
+    'Subscript':
+        'prefix': 'subscript'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sub:`2`\ O\n'
+    
+    'Superscript':
+        'prefix': 'superscript'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sup:`2`\ O\n'
+    
+    'Superscript_ss2':
+        'prefix': 'ss2'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sup:`2`\ O\n'
+    
+    'Code':
+        'prefix': 'code'
+        'body': '::\n\n    $1.'
+    
+    'New Line':
+        'prefix': 'n'
+        'body': '\n    $1'
+    
+    'New Line Longer':
+        'prefix': 'nn'
+        'body': '\n| $1\n| $2'
+    
+    'Doctest':
+        'prefix': 'rdoc'
+        'body': '>>> print ("This is a Doctest block")\nThis is a Doctest block'
+    
+    'Hlist':
+        'prefix': 'hlist'
+        'body': '.. hlist::\n   :columns: 3\n\n   * A list of\n   * short items\n   * that should be\n   * displayed\n   * horizontally\n\n'
+    
+    'Admonition Note':
+        'prefix': 'note'
+        'body': '.. note::\n\n   $1.'
+    
+    'Admonition Seealso':
+        'prefix': 'seealso'
+        'body': '.. seealso::\n\n   $1.'
+    
+    'Admonition Seealso Longer':
+        'prefix': 'seealsoo'
+        'body': '.. seealso::\n   Module :py:mod:`zipfile`\n      Documentation of the :py:mod:`zipfile` standard module.\n\n   `GNU tar manual, Basic Tar Format <http://link>`_\n      Documentation for tar archive files, including GNU tar extensions.\n'
+    
+    'Admonition Warning':
+        'prefix': 'warning'
+        'body': '.. warning::\n\n   $1.'
+    
+    'Admonition Todo':
+        'prefix': 'todo'
+        'body': '.. admonition:: todo\n\n   $1'
+    
+    'Admonition Info':
+        'prefix': 'info'
+        'body': '.. admonition:: Info\n\n   $1'
+    
+    
+    'Math Mode':
+        'prefix': 'm'
+        'body': ':math:`${1:\\\\\\\\alpha no space before last}`'
+    
+    'Math Longer':
+        'prefix': 'math'
+        'body': '.. math::\n\n    a='
+    
+    'Sum':
+        'prefix': 'sum'
+        'body': '\\\\sum_{n=1}^N'
+    
+    'Newline':
+        'prefix': 'n'
+        'body': '\\\\\\\\\\\\\\\\\n'
+    
+    'Newline nl':
+        'prefix': 'nl'
+        'body': '\\\\\\\\\\\\\\\\\n'
+    
+    'Newline newline':
+        'prefix': 'newline'
+        'body': '\\\\\\\\\\\\\\\\\n'
+    
+    'Topic':
+        'prefix': 'topic'
+        'body': '.. topic:: Topic\n\n    $1.'
+    
+    'Sidebar':
+        'prefix': 'sidebar'
+        'body': '.. sidebar:: Sidebar\n\n   $1.'
+    
+    'Test Code':
+        'prefix': 'test'
+        'body': '.. testcode::\n\n    print("hi")\n\n.. testoutput::\n\n    hi\n'
+    
+    'Class':
+        'prefix': 'rclass'
+        'body': ':class:`~className` '
+    
+    'Method':
+        'prefix': 'meth'
+        'body': ':meth:`~className.method`'
+    
+    'Single Index':
+        'prefix': 'single_index'
+        'body': '..  index::\nsingle: Pythagoras # gives bad>poetry and poetry>bad.'
+    
+    'Paired Index':
+        'prefix': 'paired_index'
+        'body': '..  index::\npair: poetry; bad # gives bad>poetry and poetry>bad.'
+    
+    'Frac Command':
+        'prefix': 'fr'
+        'body': '\\\\\\\\frac{$1}{$2}'
+    
+    'Frac Command frac':
+        'prefix': 'frac'
+        'body': '\\\\\\\\frac{$1}{$2}'
+    
+    'Arguments':
+        'prefix': 'arg'
+        'body': '''
+        Parameters
+        ----------
+         $1 :
+            $2
+         $3 : str
+            $4
+    
+        Returns
+        -------
+        None
+            This function returns nothing.
+    
+        '''
+    #---------------------Snippets added later -------------------------
+    'MacOS Desktop Nofitication':
+            'prefix': 'notify'
+            'body': '''
+            def notify():
+                """Using desktop notifications in macos.
+               
+                ..note::
+            
+                To keep the notification button until you close it chage the
+                system preferences of the notifications.
+                System Preferences > Nofitications > Script Editor > Check all and choose alert
+                 
+                """
+                import time
+                import os
+                osa = r\'\'\'osascript -e \'display notification \'\'\'
+                tm = time.ctime()
+                msg = "\\\\" Program finished on \\\\n {}\\\\"".format(tm)
+                title = r\'\'\'with title "Notification"\'\'\'
+                notif = osa + msg + title + "\'&"
+                os.system(notif)
+            $0
+            '''

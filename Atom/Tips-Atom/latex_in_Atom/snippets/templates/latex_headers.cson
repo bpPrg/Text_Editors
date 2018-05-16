@@ -1,0 +1,404 @@
+##==============================================================================
+##  Latex Snippets
+## h=eta q=theta f=phi c=chi y=psi w=omega t=tau x=xi
+##==============================================================================
+# 1. My Snippets 2. Sections 3. Environments 4. Elements e.g. listing page
+# 5. Math Symbols 6. Greek Letters and Capital Greek Letters 7. Bold Grk Letters
+# 8. Dollar Enclosed Greek Letters 9. Dollar Enclosed Bold Greek Letters
+#
+# Greek Alphabet
+# 1. alpha beta gamma delta epsilon
+# 2. zeta eta=h
+# 3. theta=q
+# 4. iota kappa lambda
+# 5. mu nu xi omicron
+# 6. pi rho sigma tau upsilon
+# 7. phi=f
+# 8. chi=c psi=y omega=w
+'.text.tex.latex':
+  #-----------------------------------------------------------------------------
+  # Header
+  'Header':
+    'prefix': 'hdr'
+    'body': '''
+    %!TEX
+    % Author: Bhishan Poudel
+    % Date  : $1
+    % Topic : $2
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    $0
+    '''
+  'Help':
+    'prefix': 'help'
+    'body': '''
+    General:
+    use tbf tit emp fr
+    int intt # integral
+    no nab txt
+    mat pmat bmat vmat Vmat
+    msun rsun
+    fig figg elst ali eq eqa 
+    part cha sec sub subsub para subp
+    listing page table 
+    
+    Text            A               Bold            Dollar
+    -----------------------------------------------------------
+    Bold            tba             tba             tbax
+    Dollar          xxa             xxba            xxa
+    Script          say             say             sayx
+
+
+    Prefixes_y: Angle, Bold, Partial (a.y b.y p.y)
+    Suffixes  : Bar, Prime, Hat, Star, Tilde (b. p. h. s. t.)
+
+
+    Prefix/Suffix   A               Bold            Dollar         Bold Dollar
+    ---------------------------------------------------------------------------
+    Angle           aay             aaby            aayx           aabyx
+    Bold            bay             bay             bayx           bayx    
+    Partial         pay             paby            payx           pabyx
+    ----------------------------------------------------------------------------
+    Star            as              asb             asx            asbx
+    Bar             ab              abb             abx            abbx
+    dot             ad              adb             adx            adbx
+    Prime           ap              apb             apx            apbx
+    Hat             ah              ahb             ahx            ahbx
+    Tilde           at              atb             atx            atbx
+    Modulus         am              amb             amx            ambx
+    zero            a0              a0b             a0x            a0bx
+    one             a1              a1b             a1x            a1bx
+    two             a2              a2b             a2x            a2bx
+    three           a3              a3b             a3x            a3bx
+    '''
+  'Author':
+    'prefix': 'aut'
+    'body': '\\\\\\author{Bhishan Poudel}$0'
+  'Title':
+    'prefix': 'tit'
+    'body': '\\\\\\title{$1}$0'
+  'Document':
+    'prefix': 'doc'
+    'body': '''
+    \\\\\\begin{document}
+    $1
+    \\\\\\end{document}
+    '''
+  # Text Formatting
+  # tb is tau bar, and tt is tau tilde
+  'textbf':
+    'prefix': 'tbf'
+    'body': '\\\\textbf{$1}'
+  'italic':
+    'prefix': 'tit'
+    'body': '\\\\textit{$1}'
+  'emphasize':
+    'prefix': 'emp'
+    'body': '\\\\emph{$1} $0'
+  'underline':
+    'prefix': 'und'
+    'body': '\\\\underline{$1} $0'
+  #-----------------------------------------------------------------------------
+  # Maths Formatting
+  'Fraction':
+    'prefix': 'fr' # Note: We can not autocomplete two things at one time.
+    'body': '\\\\frac{$1}{$2}' # We can not use ba tab inside frac
+  'qquad':
+    'prefix': 'qq'
+    'body': '\\\\qquad\ '
+  'integral':
+    'prefix': 'int'
+    'body': '\\\\int\ '
+  'integral with limits':
+    'prefix': 'intt'
+    'body': '\\\\int_{$1}{$2}\ '
+  'Double Dollars':
+    'prefix': '$'
+    'body': '\$$1\$\ $0'
+  'Double Dollar Signs':
+    'prefix': 'dd'
+    'body': '\$$1\$\ $0'
+  'Square Root':
+    'prefix': 'sq'
+    'body': '\\\\sqrt{$1}'
+  'Parenthesis':
+    'prefix': 'pr'
+    'body': '\\\\sqrt{$1}'
+  'Right Arrow':
+    'prefix': 'rar'
+    'body': '\\\\rightarrow\ '
+  'Absolute Value': # We need to use newcommand
+    'prefix': 'abs' # \newcommand{\abs}[1]{\lvert#1\rvert}
+    'body': '\\\\abs{$1}$0'
+  'Absolute Square': # We need to use newcommand
+    'prefix': 'absq' # \newcommand{\abs}[1]{\lvert#1\rvert}
+    'body': '\\\\abs{$1}^2$0'
+  'nonumber':
+    'prefix': 'no'
+    'body': '\\\\nonumber'
+  'nonumber newline':
+    'prefix': 'non'
+    'body': '\\\\nonumber \\\\\\\\\n $1 &=& $2'
+  'nabla':
+    'prefix': 'nab'
+    'body': '\\\\nabla'
+  'nonumber square':
+    'prefix': 'nabs'
+    'body': '\\\\nabla^2'
+  'text format':
+    'prefix': 'txt'
+    'body': '\\\\text{$1}\ $0'
+  #-----------------------------------------------------------------------------
+  # matrix pmatrix bmatrix vmatrix from amsmath
+  'matrix':
+    'prefix': 'mat'
+    'body': '''
+    \$\$
+    \\\\begin{matrix}
+      $1 & $2 \\\\\\\\
+      $3 & $4
+    \\\\end{matrix}
+    \$\$
+    '''
+  'pmatrix':
+    'prefix': 'pmat'
+    'body': '''
+    \$\$
+    \\\\begin{pmatrix}
+      $1 & $2 \\\\\\\\
+      $3 & $4
+    \\\\end{pmatrix}
+    \$\$
+    '''
+  'bmatrix':
+    'prefix': 'bmat'
+    'body': '''
+    \$\$
+    \\\\begin{bmatrix}
+      $1 & $2 \\\\\\\\
+      $3 & $4
+    \\\\end{bmatrix}
+    \$\$
+    '''
+  'vmatrix':
+    'prefix': 'vmat'
+    'body': '''
+    \$\$
+    \\\\begin{vmatrix}
+      $1 & $2 \\\\\\\\
+      $3 & $4
+    \\\\end{vmatrix}
+    \$\$
+    '''
+  'Vmatrix':
+    'prefix': 'Vmat'
+    'body': '''
+    \$\$
+    \\\\begin{Vmatrix}
+      $1 & $2 \\\\\\\\
+      $3 & $4
+    \\\\end{Vmatrix}
+    \$\$
+    '''
+  'bmatrix mn':
+    'prefix': 'matmn'
+    'body': '''
+    \$\$
+    \\\\begin{bmatrix}
+      x_{11} & x_{12} & x_{13} & \\\\dots & x_{1n} \\\\\\\\
+      x_{21} & x_{22} & x_{23} & \\\\dots & x_{2n} \\\\\\\\
+      \\\\vdots & \\\\vdots & \\\\vdots & \\\\ddots & \\\\vdots \\\\\\\\
+      x_{m1} & x_{m2} & x_{m3} & \\\\dots & x_{mn}
+    \\\\end{bmatrix}
+    \$\$
+    '''
+
+  #-----------------------------------------------------------------------------
+  # Astronomy
+  'mass of sun':
+    'prefix': 'msun'
+    'body': 'M_\{\\\\\\odot\}\ '
+  'mass of sun dollar enclosed':
+    'prefix': 'xmsun'
+    'body': '\$M_\{\\\\\\odot\}\$'
+  'radius of sun':
+    'prefix': 'rsun'
+    'body': 'R_\{\\\\\\odot\}\ '
+  'radius of sun dollar enclosed':
+    'prefix': 'xrsun'
+    'body': '\$R_\{\\\\\\odot\}\$'
+  #-----------------------------------------------------------------------------
+  # Environments
+  'Figure Environement':
+    'prefix': 'fig'
+    'body': '''
+    \\\\begin{figure}[ht!]
+        \\\\centering
+        \\\\includegraphics[width=0.5\\\\textwidth]{${1:only_basename}}
+        \\\\caption[$2]{$2}
+        \\\\label{[fig:$1]}
+    \\\\end{figure}
+    $0
+    '''
+  'Figure Environement With Citation':
+    'prefix': 'figg'
+    'body': '''
+    \\\\begin{figure}[ht!]
+        \\\\centering
+        \\\\includegraphics[width=0.5\\\\textwidth]{${1:only_basename}}
+        \\\\caption[$2]{$2 ~\\\\protect\\\\cite{$3}}
+        \\\\label{[fig:$1]}
+    \\\\end{figure}
+    $0
+    '''
+  'Easy List & &&':
+    'prefix': 'elst'
+    'body': '''
+            \\\\begin{easylist}
+
+              & {$1}
+              & {$2}
+              & {$3}
+            \\\\end{easylist}
+            '''
+  'Align(ed)':
+    'prefix': 'ali'
+    'body': '''
+      \\\\begin{align}\\\\label{[eq:$1]}
+        $2 & = $3 \\\\\\\\
+        $4  & = $5 \\\\nonumber \\\\\\\\
+        $6  & = $7 \\\\nonumber
+      \\\\end{align}
+      $0
+    '''
+  'Align Equation':
+    'prefix': 'eqa'
+    'body': '''
+      \\\\begin{align}\\\\label{[eq:$1]}
+        $2 & = $3 \\\\\\\\
+        $4  & = $6 \\\\nonumber \\\\\\\\
+        $7  & = $8 \\\\nonumber
+      \\\\end{align}
+      $0
+    '''
+  'Description':
+    'prefix': 'desc'
+    'body': '\\\\begin{description}\n\t\\\\item[$1]$2\n\\\\end{description}'
+  'Enumerate':
+    'prefix': 'enum'
+    'body': '\\\\begin{enumerate}\n\t\\\\item $1\n\\\\end{enumerate}'
+  'Itemize':
+    'prefix': 'item'
+    'body': '\\\\begin{itemize}\n\t\\\\item $1\n\\\\end{itemize}'
+  'Split':
+    'prefix': 'spl'
+    'body': '\\\\begin{split}\n\t$0\n\\\\end{split}'
+  'Equation':
+    'prefix': 'eq'
+    'body': '\\\\begin{eqnarray}\\\\label{[eq:$1]}\n\t$2\n\\\\end{eqnarray}'
+  'Equation Aligned':
+    'prefix': 'eqa'
+    'body': '''
+    \\\\begin{eqnarray}\\\\label{[eq:$1]}
+        $2 &=& $3 \\\\\\\\
+        $4 &=& $5 \\\\nonumber
+    \\\\end{eqnarray}
+    '''
+  'Equation Alignedd':
+    'prefix': 'eqaa'
+    'body': '''
+    \\\\begin{eqnarray}\\\\label{[eq:$1]}
+        $2 &=& $3 \\\\\\\\
+        $4 &=& $5 \\\\nonumber \\\\\\\\
+        $6 &=& $7 \\\\nonumber
+    \\\\end{eqnarray}
+    '''
+  'Gather(ed)':
+      'prefix': 'gat'
+      'body': '\\begin{gather}\n\t$0\n\\end{gather}'
+  'Cases':
+      'prefix': 'cas'
+      'body': '\\begin{cases}\n\t${1:equation}, &\\text{ if }${2:case}\\\\\n\t$0\n\\end{cases}'
+  #-----------------------------------------------------------------------------
+  # Sections
+  'Part':
+    'prefix': 'part'
+    'body': '''
+    \\paragraph{${1:part name}}\n\\label{part:${1:part label}}\n$2
+    '''
+  'Chapter':
+    'prefix': 'cha'
+    'body': '''
+    \\chapter{${1:chapter name}}\n\\label{chap:${1:chapter label}}\n$2
+    '''
+  'Section':
+    'prefix': 'sec'
+    'body': '''
+    %
+    %
+    %#******************************************************************************
+    %#==============================================================================
+    %#          Section : $1
+    %#==============================================================================
+    %#******************************************************************************
+    %
+    %
+    \\\\\\section{$1}\\\\label{sec:$2}
+    '''
+  'Sub Section':
+    'prefix': 'sub'
+    'body': '''
+    %
+    %
+    %#------------------------------------------------------------------------------
+    %#          Subsection 1a: $1
+    %#------------------------------------------------------------------------------
+    %
+    %
+    \\\\\\subsection{$1}\\\\\\label{subsec:$2}\n$0
+    '''
+  'Sub Sub Section':
+    'prefix': 'subsub'
+    'body': '''
+    %
+    %
+    %```````````````````````````````````````````````````````````````````````````````
+    %         Subsubsection : ${1:subsubsection name}
+    %```````````````````````````````````````````````````````````````````````````````
+    %
+    \\\\subsubsection{$1}\\\\label{subsusb:${2}}\n$0
+    '''
+  'Paragraph':
+    'prefix': 'para'
+    'body': '''
+    \\paragraph{${1:paragraph name}}\n\\label{par:${1:paragraph label}}\n$2
+    '''
+  'Sub Paragraph':
+    'prefix': 'subp'
+    'body': '''
+    \\subparagraph{${1:subparagraph name}}\n\\label{subp:${1:subparagraph label}}\n$2
+    '''
+  #-----------------------------------------------------------------------------
+  # My Acronyms (NOT the package acronyms or glossaries)
+  'My Acronyms':
+    'prefix': 'acros'
+    'body': '''
+    \$\\\\boldsymbol{$1}\$ \\\\hspace{0.2cm}  {$2} \\\\\\\\
+    $0
+    '''
+  'usepackage ':
+    'prefix': 'use'
+    'body': '''
+    \\\\usepackage{$1}
+    '''
+
+  #-----------------------------------------------------------------------------
+  # References and citations
+  'Listing':
+    'prefix': 'listing'
+    'body': '${1:Listing}~\\ref{${2:lst:}}$0'
+  'Page':
+    'prefix': 'page'
+    'body': '${1:page}~\\pageref{$2}$0'
+  'Table':
+    'prefix': 'table'
+    'body': '${1:Table}~\\ref{${2:tab:}}$0'

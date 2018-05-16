@@ -1,0 +1,151 @@
+Author: Bhishan Poudel, Physics PhD student Ohio University
+Date  : Dec 18, 2017
+
+Topic: Atom packages (apm list | pbcopy)
+=========================================
+[36mBuilt-in Atom Packages[39m (92)
+├── atom-dark-syntax@0.28.0
+├── atom-dark-ui@0.53.0
+├── atom-light-syntax@0.29.0
+├── atom-light-ui@0.46.0
+├── base16-tomorrow-dark-theme@1.5.0
+├── base16-tomorrow-light-theme@1.5.0
+├── one-dark-ui@1.10.8
+├── one-light-ui@1.10.8
+├── one-dark-syntax@1.8.0
+├── one-light-syntax@1.8.0
+├── solarized-dark-syntax@1.1.2
+├── solarized-light-syntax@1.1.2
+├── about@1.7.8
+├── archive-view@0.64.1
+├── autocomplete-atom-api@0.10.5
+├── autocomplete-css@0.17.4 (disabled)
+├── autocomplete-html@0.8.3
+├── autocomplete-plus@2.38.0
+├── autocomplete-snippets@1.11.2
+├── autoflow@0.29.0
+├── autosave@0.24.6
+├── background-tips@0.27.1
+├── bookmarks@0.44.4
+├── bracket-matcher@0.88.0
+├── command-palette@0.42.0
+├── dalek@0.2.1
+├── deprecation-cop@0.56.9
+├── dev-live-reload@0.47.1
+├── encoding-selector@0.23.7
+├── exception-reporting@0.42.0
+├── find-and-replace@0.215.0
+├── fuzzy-finder@1.7.3
+├── github@0.8.3
+├── git-diff@1.3.6
+├── go-to-line@0.32.1
+├── grammar-selector@0.49.8
+├── image-view@0.62.4
+├── incompatible-packages@0.27.3
+├── keybinding-resolver@0.38.1
+├── line-ending-selector@0.7.4
+├── link@0.31.3
+├── markdown-preview@0.159.18 (disabled)
+├── metrics@1.2.6 (disabled)
+├── notifications@0.69.2
+├── open-on-github@1.3.1
+├── package-generator@1.1.1
+├── settings-view@0.253.0
+├── snippets@1.1.9
+├── spell-check@0.72.3
+├── status-bar@1.8.14
+├── styleguide@0.49.8
+├── symbols-view@0.118.1
+├── tabs@0.109.1
+├── timecop@0.36.0
+├── tree-view@0.221.3
+├── update-package-dependencies@0.12.0
+├── welcome@0.36.6 (disabled)
+├── whitespace@0.37.5
+├── wrap-guide@0.40.2
+├── language-c@0.58.1
+├── language-clojure@0.22.4 (disabled)
+├── language-coffee-script@0.49.3
+├── language-csharp@0.14.3 (disabled)
+├── language-css@0.42.7 (disabled)
+├── language-gfm@0.90.2 (disabled)
+├── language-git@0.19.1
+├── language-go@0.44.3 (disabled)
+├── language-html@0.48.4
+├── language-hyperlink@0.16.3
+├── language-java@0.27.6 (disabled)
+├── language-javascript@0.127.6 (disabled)
+├── language-json@0.19.1
+├── language-less@0.33.0 (disabled)
+├── language-make@0.22.3
+├── language-mustache@0.14.4 (disabled)
+├── language-objective-c@0.15.1 (disabled)
+├── language-perl@0.38.1
+├── language-php@0.42.2 (disabled)
+├── language-property-list@0.9.1 (disabled)
+├── language-python@0.45.5
+├── language-ruby@0.71.4 (disabled)
+├── language-ruby-on-rails@0.25.2 (disabled)
+├── language-sass@0.61.1 (disabled)
+├── language-shellscript@0.25.4
+├── language-source@0.9.0
+├── language-sql@0.25.8 (disabled)
+├── language-text@0.7.3
+├── language-todo@0.29.3
+├── language-toml@0.18.1 (disabled)
+├── language-typescript@0.2.2
+├── language-xml@0.35.2 (disabled)
+└── language-yaml@0.31.1
+
+[36mCommunity Packages (51)[39m /Users/poudel/.atom/packages
+├── Delete-Whitelines@0.6.3
+├── MagicPython@1.0.12
+├── Zen@0.18.0
+├── advanced-open-file@0.16.7
+├── aligner@1.2.4
+├── aligner-javascript@1.3.0
+├── aligner-python@1.1.0
+├── atom-clock@0.1.15
+├── atom-shell-commands@1.5.0
+├── autocomplete-bash-builtins@0.3.5
+├── break@2.0.3
+├── change-case@0.6.5
+├── click-link@1.0.11
+├── color-picker@2.2.5
+├── column-select@1.0.1
+├── date@2.1.0
+├── delete-lines@0.5.0
+├── expand-selection-to-quotes@0.11.0
+├── file-icons@2.1.15
+├── git-plus@7.10.0
+├── intentions@1.1.5
+├── language-latex@1.1.1
+├── language-markdown@0.25.1
+├── language-restructuredtext@1.1.0
+├── latex@0.49.0
+├── latexer@0.3.0
+├── markdown-preview-enhanced@0.15.1
+├── markdown-writer@2.7.3
+├── minimap@4.29.7
+├── open-terminal-here@2.3.1
+├── open-this@0.5.0
+├── pandoc-convert@1.1.1
+├── pdf-view@0.61.0
+├── pigments@0.40.2
+├── plain-simple@1.1.0
+├── preview-inline@1.5.1
+├── pristine-ui@1.1.11
+├── python-indent@1.1.4
+├── python-tools@0.6.9
+├── restart-atom@0.2.0
+├── rst-preview-pandoc@0.1.12
+├── script@3.18.0
+├── scroll-through-time@0.3.0
+├── selection-highlight@0.1.6
+├── sequential-number@0.5.0
+├── sort-lines@0.18.0
+├── toggler@0.3.1
+├── tool-bar@1.1.0
+├── tool-bar-almighty@0.8.2
+├── wakatime@7.0.4
+└── wordcount@2.10.4

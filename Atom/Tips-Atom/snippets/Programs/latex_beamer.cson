@@ -1,0 +1,929 @@
+#-------------------------------------------------------------------------------  
+  # Beamer Presentation
+  'Beamer Snippets':
+    'prefix': 'beamer'
+    'body': '''
+    bmfr bmeqh bmblue
+    '''
+  'Beamer Frame':
+    'prefix': 'bmfr'
+    'body': '''
+    %
+    %
+    %#------------------------------------------------------------------------------
+    %#          Frame: $1
+    %#------------------------------------------------------------------------------
+    %
+    %
+    \\\\begin{frame}[fragile]{$1}
+      $2
+    \\\\end{frame}
+    '''
+  'Beamer Equation Highlight':
+    'prefix': 'bmeqh'
+    'body': '''
+    \\\\begin{frame}
+      \\\\frametitle{$1}
+      \\\\begin{align}
+        \\\\colorbox{blue!20}{$ x^2 + y^2$} &= 4
+        \\\\end{align}
+    \\\\end{frame}
+    $0
+    '''
+  'Beamer Block Blue':
+    'prefix': 'bmblue'
+    'body': '''
+    \\\\begin{block}{Blue Title}
+      Sample text in normal color.
+    \\\\end{block}
+    $0
+    '''
+  'Beamer Alertblock Red':
+    'prefix': 'bmred'
+    'body': '''
+    \\\\begin{alertblock}{Red Title}
+      Sample text in normal color.
+    \\\\end{alertblock}
+    $0
+    '''
+  'Beamer Examples Green':
+    'prefix': 'bmgreen'
+    'body': '''
+    \\\\begin{examples}
+      "Examples" is fixed as block title.
+    \\\\end{examples}
+    $0
+    '''
+  'Beamer Arrow Equation Term':
+    'prefix': 'bmarr'
+    'body': '''
+\\\\begin{frame}
+\\\\frametitle{Using Arrows in tikz}
+  % First page is the equation without arrow
+  \\\\begin{itemize}
+    \\\\item<2-> Overall mean \\\\tikz[na] \\\\node[coordinate] (s1) {};
+    \\\\item<1->[]{%
+    \\\\begin{equation}
+      y_{ijk} = \\\\tikz[baseline]{ \\\\node[fill=blue!20,anchor=base,rounded corners=2pt]
+              (d1) {$\\\\mu$}; }
+              + \\\\epsilon_{ijk}
+    \\\\end{equation}}%
+  \\\\end{itemize}
+
+  % This part is for arrow overlay equation in next page.
+  \\\\begin{tikzpicture}[overlay]
+  \\\\path<2->[->] (s1) edge [bend left] (d1);
+  \\\\end{tikzpicture}
+\\\\end{frame}
+    $0
+    '''
+  #-----------------------------------------------------------------------------
+  # Beamer Colors
+  'Beamer Color Apricot':
+    'prefix': 'c1'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Apricot]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Bittersweet':
+    'prefix': 'c2'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Bittersweet]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Blue':
+    'prefix': 'c3'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Blue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color BlueViolet':
+    'prefix': 'c4'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=BlueViolet]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Brown':
+    'prefix': 'c5'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Brown]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color CadetBlue':
+    'prefix': 'c6'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=CadetBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Cerulean':
+    'prefix': 'c7'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Cerulean]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Cyan':
+    'prefix': 'c8'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Cyan]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color DarkOrchid':
+    'prefix': 'c9'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=DarkOrchid]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color ForestGreen':
+    'prefix': 'c10'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=ForestGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Goldenrod':
+    'prefix': 'c11'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Goldenrod]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Green':
+    'prefix': 'c12'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Green]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color JungleGreen':
+    'prefix': 'c13'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=JungleGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color LimeGreen':
+    'prefix': 'c14'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=LimeGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Mahogany':
+    'prefix': 'c15'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Mahogany]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Melon':
+    'prefix': 'c16'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Melon]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Mulberry':
+    'prefix': 'c17'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Mulberry]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color OliveGreen':
+    'prefix': 'c18'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=OliveGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color OrangeRed':
+    'prefix': 'c19'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=OrangeRed]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Peach':
+    'prefix': 'c20'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Peach]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color PineGreen':
+    'prefix': 'c21'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=PineGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color ProcessBlue':
+    'prefix': 'c22'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=ProcessBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color RawSienna':
+    'prefix': 'c23'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RawSienna]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color RedOrange':
+    'prefix': 'c24'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RedOrange]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Rhodamine':
+    'prefix': 'c25'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Rhodamine]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color RoyalPurple':
+    'prefix': 'c26'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RoyalPurple]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Salmon':
+    'prefix': 'c27'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Salmon]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Sepia':
+    'prefix': 'c28'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Sepia]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color SpringGreen':
+    'prefix': 'c29'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=SpringGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color TealBlue':
+    'prefix': 'c30'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=TealBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Turquoise':
+    'prefix': 'c31'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Turquoise]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color VioletRed':
+    'prefix': 'c32'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=VioletRed]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color WildStrawberry':
+    'prefix': 'c33'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=WildStrawberry]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color YellowGreen':
+    'prefix': 'c34'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=YellowGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Aquamarine':
+    'prefix': 'c35'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Aquamarine]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color White 36':
+    'prefix': 'c36'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=White]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color BlueGreen':
+    'prefix': 'c37'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=BlueGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color BrickRed':
+    'prefix': 'c38'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=BrickRed]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color BurntOrange':
+    'prefix': 'c39'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=BurntOrange]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color CarnationPink':
+    'prefix': 'c40'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=CarnationPink]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color CornflowerBlue':
+    'prefix': 'c41'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=CornflowerBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Dandelion':
+    'prefix': 'c42'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Dandelion]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Emerald':
+    'prefix': 'c43'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Emerald]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Fuchsia':
+    'prefix': 'c44'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Fuchsia]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Gray':
+    'prefix': 'c45'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Gray]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color GreenYellow':
+    'prefix': 'c46'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=GreenYellow]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Lavender':
+    'prefix': 'c47'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Lavender]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Magenta':
+    'prefix': 'c48'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Magenta]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Maroon':
+    'prefix': 'c49'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Maroon]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color MidnightBlue':
+    'prefix': 'c50'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=MidnightBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color NavyBlue':
+    'prefix': 'c51'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=NavyBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Orange':
+    'prefix': 'c52'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Orange]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Orchid':
+    'prefix': 'c53'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Orchid]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Periwinkle':
+    'prefix': 'c54'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Periwinkle]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Plum':
+    'prefix': 'c55'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Plum]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Purple':
+    'prefix': 'c56'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Purple]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Red':
+    'prefix': 'c57'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Red]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color RedViolet':
+    'prefix': 'c58'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RedViolet]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color RoyalBlue':
+    'prefix': 'c59'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RoyalBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color RubineRed':
+    'prefix': 'c60'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RubineRed]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color SeaGreen':
+    'prefix': 'c61'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=SeaGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color SkyBlue':
+    'prefix': 'c62'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=SkyBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Tan':
+    'prefix': 'c63'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Tan]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Thistle':
+    'prefix': 'c64'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Thistle]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Violet':
+    'prefix': 'c65'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Violet]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color White 66':
+    'prefix': 'c66'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=White]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color Yellow':
+    'prefix': 'c67'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Yellow]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  'Beamer Color YellowOrange':
+    'prefix': 'c68'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=YellowOrange]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+
+  #-----------------------------------------------------------------------------
+  # tcolorbox colored boxes
+  'tcolorbox snippets':
+    'prefix': 'tcolorbox'
+    'body': '''
+\\\\usepackage{tikz,lipsum,lmodern}
+\\\\usepackage[most]{tcolorbox}
+red red2 blue olive
+$0
+    '''
+  'tcolorbox red box':
+    'prefix': 'red'
+    'body': '''
+\\\\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+  $1
+\\\\end{tcolorbox}
+$0
+    '''
+  'tcolorbox red title':
+    'prefix': 'red2'
+    'body': '''
+\\\\begin{tcolorbox}[colback=yellow!10!white,colframe=red!75!black,title=$1]
+  $2
+\\\\end{tcolorbox}
+$0
+    '''
+  'tcolorbox red title blue border':
+    'prefix': 'redblue'
+    'body': '''
+\\\\begin{tcolorbox}[enhanced,frame style image=blueshade.png,
+  opacityback=0.75,opacitybacktitle=0.25,
+  colback=blue!5!white,colframe=blue!75!black,
+  title=$1]
+  $2
+\\\\end{tcolorbox}
+$0
+    '''
+
+  'tcolorbox blue title 1':
+    'prefix': 'bluet'
+    'body': '''
+\\\\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=$1]
+  $2
+\\\\end{tcolorbox}
+$0
+    '''
+  'tcolorbox blue title 2':
+    'prefix': 'blue'
+    'body': '''
+\\\\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=$1]
+  $2
+\\\\end{tcolorbox}
+$0
+    '''
+  'tcolorbox olive':
+    'prefix': 'olive'
+    'body': '''
+\\\\begin{tcolorbox}[colback=yellow!5!white,colframe=yellow!50!black,
+  colbacktitle=yellow!75!black,title=M$1]
+  $2
+  \\\\tcblower
+  $3
+\\\\end{tcolorbox}
+$0
+    '''
+  'tcolorbox code with latex':
+    'prefix': 'tcb1'
+    'body': '''
+\\\\begin{tcblisting}{colback=red!5!white,colframe=red!75!black}
+This is a \\\\LaTeX\\\\ example:
+\\\\begin{equation}
+\\\\sum\\\\limits_{i=1}^n i = \\\\frac{n(n+1)}{2}.
+\\\\end{equation}
+\\\\end{tcblisting}
+    '''
+  'tcolorbox side by side':
+    'prefix': 'tcb2'
+    'body': '''
+\\\\begin{tcblisting}{colback=red!5!white,colframe=red!75!black,listing side text,
+  title=Side by side,fonttitle=\\\\bfseries}
+This is a \\\\LaTeX\\\\ example:
+\\\\begin{equation}
+\\\\sum\\\\limits_{i=1}^n i = \\\\frac{n(n+1)}{2}.
+\\\\end{equation}
+\\\\end{tcblisting}
+    '''
+  'tcolorbox theorem':
+    'prefix': 'theorem'
+    'body': '''
+\\\\newtcbtheorem[auto counter,number within=section]{theo}%
+  {Theorem}{fonttitle=\\\\bfseries\\\\upshape, fontupper=\\\\slshape,
+     arc=0mm, colback=blue!5!white,colframe=blue!75!black}{theorem}
+
+\\\\begin{theo}{Summation of Numbers}{summation}
+  For all natural number $n$ it holds:
+  \\\\begin{equation}
+  \\\\tcbhighmath{\\\\sum\\\\limits_{i=1}^n i = \\\\frac{n(n+1)}{2}.}
+  \\\\end{equation}
+\\\\end{theo}
+
+We have given Theorem \\\\ref{theorem:summation} on page \\\\pageref{theorem:summation}.
+    '''
+  'tcolorbox boxes in boxes':
+    'prefix': 'boxinbox'
+    'body': '''
+\\\\begin{tcolorbox}[colback=yellow!10!white,colframe=yellow!50!black,
+  every box/.style={fonttitle=\\\\bfseries},title=Box]
+  \\\\begin{tcolorbox}[enhanced,colback=red!10!white,colframe=red!50!black,
+    colbacktitle=red!85!black,
+    title=Box inside box,drop fuzzy shadow]
+    \\\\begin{tcolorbox}[beamer,colframe=blue!50!black,title=Box inside box inside box]
+      And now for something completely different: Boxes!\\\\par\\\\medskip
+      \\\\newtcbox{\\\\mybox}[1][]{nobeforeafter,tcbox raise base,colframe=green!50!black,colback=green!10!white,
+        sharp corners,top=1pt,bottom=1pt,before upper=\\\\strut,#1}
+      \\\\mybox[rounded corners=west]{This} \\\\mybox{is} \\\\mybox{another} \\\\mybox[rounded corners=east]{box.}
+    \\\\end{tcolorbox}
+  \\\\end{tcolorbox}
+\\\\end{tcolorbox}
+    '''
+#-----------------------------------------------------------------------------
+# Hyperlink color etc
+  'Hyperlink':
+    'prefix': 'hyp'
+    'body': '''
+    \\\\\\usepackage{hyperref}
+    \\\\\\hypersetup{colorlinks=true,linkcolor=orange,filecolor=magenta,urlcolor=cyan,
+                     citecolor=DarkRed, bookmarks=true }
+    $0
+    '''
+  'Highlight':
+    'prefix': 'hlt'
+    'body': '''
+    \\\\usepackage{amsmath,amssymb}
+    \\\\usepackage{xcolor}
+    % \\\\highlight[<colour>]{<stuff>}
+    \\\\newcommand{\\\\highlight}[2][yellow]{\\\\mathchoice
+      {\\\\colorbox{#1}{$\\\\displaystyle#2$}}
+      {\\\\colorbox{#1}{$\\\\textstyle#2$}}
+      {\\\\colorbox{#1}{$\\\\scriptstyle#2$}}
+      {\\\\colorbox{#1}{$\\\\scriptscriptstyle#2$}}}
+    $0
+    '''
+  'Colored Boxed':
+    'prefix': 'box'
+    'body': '''
+    % colored box
+    \\\\\\usepackage{tikz}
+    \\\\\\usetikzlibrary{calc}
+    % put color to \\\\boxed math command
+    \\\\newcommand*{\\\\boxcolor}{orange}
+    \\\\makeatletter
+    \\\\renewcommand{\\\\boxed}[1]{\\\\textcolor{\\\\boxcolor}{%
+    \\\\tikz[baseline={([yshift=-1ex]current bounding box.center)}] \\\\node [rectangle, minimum
+    width=1ex,rounded corners,draw] {\\\\normalcolor\\\\m@th$\\\\displaystyle#1$};}}
+    \\\\makeatother
+    $0
+    '''
+  'Beamer Preamble':
+    'prefix': 'bmtmp'
+    'body': '''
+%!TEX
+% Author: Bhishan Poudel
+% Date  : Aug 21, 2017 Mon
+% Topic : Presentation using beamer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\\\\documentclass{beamer}
+\\\\usepackage[utf8]{inputenc}
+\\\\usetheme{Madrid}
+\\\\usecolortheme{default}
+%other packages
+\\\\usepackage{graphicx,subfigure} % For figures
+\\\\graphicspath{ {figures/}{../figures/} } % Put figures inside this directory and use pdf
+\\\\usepackage{amsmath,amssymb}
+\\\\usepackage{fancybox}
+\\\\usepackage{xcolor}
+\\\\usepackage{hyperref}
+\\\\hypersetup{colorlinks=true,linkcolor=orange,filecolor=magenta,urlcolor=cyan,
+            citecolor=DarkRed }
+%% colored box
+\\\\usepackage{tikz}
+\\\\usetikzlibrary{calc}
+% put color to \\\\boxed math command
+\\\\newcommand*{\\\\boxcolor}{orange}
+\\\\makeatletter
+\\\\renewcommand{\\\\boxed}[1]{\\\\textcolor{\\\\boxcolor}{%
+\\\\tikz[baseline={([yshift=-1ex]current bounding box.center)}] \\\\node [rectangle, minimum
+width=1ex,rounded corners,draw] {\\\\normalcolor\\\\m@th$\\\\displaystyle#1$};}}
+\\\\makeatother
+
+
+
+%------------------------------------------------------------
+%% Title Page
+\\\\title[Astroseminar Fall 2017] %optional
+{Title of  Presentation}
+% \\\\subtitle{Subtitle}
+\\\\author[Poudel, Bhishan] % (optional)
+{~B.~Poudel\\\\inst{1} }
+
+\\\\institute[Ohio University] % (optional)
+{\\\\inst{1}%
+  Department of Physics and Astronomy\\\\\\\\
+  Ohio University
+}
+\\\\date[Aug 21, 2017] % (optional)
+{} % We can write text here
+\\\\logo{\\\\includegraphics[height=1.5cm]{ou.jpeg}}
+
+
+%------------------------------------------------------------
+% Table of Contents
+\\\\AtBeginSection[]
+{
+  \\\\begin{frame}
+    \\\\frametitle{Table of Contents}
+    \\\\tableofcontents[currentsection]
+  \\\\end{frame}
+}
+
+
+%------------------------------------------------------------
+%%%%%%%% Begin of Document%%%%%%%%%%%
+\\\\begin{document}
+\\\\frame{\\\\titlepage}
+\\\\begin{frame}
+\\\\frametitle{Table of Contents}
+\\\\tableofcontents
+\\\\end{frame}
+\\\\section{First section}
+\\\\begin{frame}
+  \\\\frametitle{Example to make text visible using \\item command}
+  Write text here.
+\\\\end{frame}
+\\\\end{document}
+    $0
+    '''
+#------------------------------------------------------------
+# For package [acronym]{glossaries}
+#------------------------------------------------------------
+  'acronym':
+    'prefix': 'acro'
+    'body': '\\\\newacronym{$1}{$2}{$3}'
+  'glossary':
+    'prefix': 'glos'
+    'body': '''
+    \\\\newglossaryentry{$1}{
+    name=$2,
+    description={$3}}
+    '''
+  'glossary for equation':
+    'prefix': 'glose'
+    'body': '''
+    \\\\newglossaryentry{$1}{
+    name=$2,
+    description={\$\$
+    $3
+    \$\$}}
+    '''
+
+
+# Additional Latex snippets
+  'a1':
+    'prefix': 'da'
+    'body': 'deflection angle '
+  'a2':
+    'prefix': 'ea'
+    'body': 'Einstein angle '
+  'a3':
+    'prefix': 'gl'
+    'body': 'gravitational lensing '
+  '1/2':
+    'prefix': 'hlf'
+    'body': '\\\\frac{1}{2}\ $0'
+  'Dollar Signs':
+    'prefix': 'dl'
+    'body': '\$$1\$'
+  'Dollar Signs With Space':
+    'prefix': 'dll'
+    'body': '\$$1\$\ $0'
+  'Equivalent Sign':
+    'prefix': 'eqv'
+    'body': '\\\\equiv'
+  'Definition':
+    'prefix': 'def'
+    'body': '''
+    \\\\begin{equation}\\\\label{[eq:$1]}
+      \\\\boxed{ $2 \\\\equiv $3 } \\\\quad (\\\\text{$4})
+    \\\\end{equation}
+    '''
+  'Definition Added Later':
+    'prefix': 'deff'
+    'body': '\\\\quad (\\\\text{$1})'
+  'Modulus':
+    'prefix': 'mod'
+    'body': '\\\\lvert $1 \\\\rvert'
+  #------------------------------------------------------------
+  # Latex Typo
+  #------------------------------------------------------------
+   'Typo1':
+     'prefix': 'hte'
+     'body': 'the'
+ #------------------------------------------------------------
+ # Latex Typo End
+ #------------------------------------------------------------

@@ -1,0 +1,1622 @@
+# Bhishan Poudel's Snippets
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+#
+#
+# To find source name go to preferences look for language and look scope.
+# e.g. search restructuredtext
+# it shows text.restructuredtext
+#
+# NOTE: DISABLE autocomplete-plus and use only this snippets
+#
+#   For suggestion:    ${1:arg1}.
+#
+# Example of a snippet
+#
+# '':
+#     'prefix': ''
+#     'body': ''
+#
+#
+##==============================================================================
+## Plain text Snippets
+##=============================================================================
+'.text.plain':
+    'diary':
+        'prefix': 'hdr'
+        'body': """
+        ********************************************************************************
+        # ==============================================================================
+        # Author : Bhishan Poudel; PhD Student Ohio University
+        # Email  : bhishanpdl@gmail.com
+        # Date   : $1
+        # Summary: $2
+        # ==============================================================================
+        $0
+        """
+
+    'header':
+      'prefix': 'h'
+      'body': '''
+      Author: Bhishan Poudel, Physics PhD student Ohio University
+      Date  : $1
+
+      Topic: $2
+      ====================================
+      $0
+      '''
+
+    'Equal sign':
+      'prefix': '='
+      'body': '==========================='
+
+
+    'topic':
+        'prefix': 't'
+        'body': '\n\n# =============================================================================\n# Date   : $1\n# Summary: $2\n# =============================================================================\n\n$0'
+
+    'single comment line':
+        'prefix': 'line'
+        'body': '# =============================================================================\n$0'
+
+    'single comment line typo':
+        'prefix': 'lien'
+        'body': '# =============================================================================\n$0'
+
+    'lines':
+        'prefix': 'lines'
+        'body': '##=======================================================================\n## $1\n\##=======================================================================$0'
+
+    'lines typo':
+        'prefix': 'liens'
+        'body': '##=======================================================================\n## $1\n\##=======================================================================$0'
+    '1 spaces':
+        'prefix': '1s'
+        'body': '\\\\ '
+    '2 spaces':
+        'prefix': '2s'
+        'body': '\\\\ \\\\ '
+    '1 spaces':
+        'prefix': '3s'
+        'body': '\\\\ \\\\ \\\\ '
+    '4 spaces':
+        'prefix': '4s'
+        'body': '\\\\ \\\\ \\\\ \\\\ '
+    '5 spaces':
+        'prefix': '5s'
+        'body': '\\\\ \\\\ \\\\ \\\\ \\\\ '
+    '6 spaces':
+        'prefix': '6s'
+        'body': '\\\\ \\\\ \\\\ \\\\ \\\\ \\\\ '
+    '7 spaces':
+        'prefix': '7s'
+        'body': '\\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ '
+    '8 spaces':
+        'prefix': '8s'
+        'body': '\\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ '
+    '9 spaces':
+        'prefix': '9s'
+        'body': '\\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ '
+    '10 spaces':
+        'prefix': '10s'
+        'body': '\\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ '
+# Above this is Plain Text.
+##=======================================================================
+## Bash Shell Snippets
+##=======================================================================
+'.source.shell':
+   'Header':
+     'prefix': 'h'
+     'body': '''
+      #!bash
+      #
+      ###########################################################
+      # Author: Bhishan Poudel
+      # Date  : $1
+      # Topic : $2
+      ###########################################################
+      #
+      $0
+     '''
+
+   'Header with hdr':
+     'prefix': 'hdr'
+     'body': '''
+      #!bash
+      #
+      ###########################################################
+      # Author: Bhishan Poudel
+      # Date  : $1
+      # Topic : $2
+      ###########################################################
+      #
+      $0
+     '''
+
+   'for loop':
+     'prefix': 'for'
+     'body': '''
+     for f in *.pdf; do echo $f; done;
+     for item in $(echo foo bar baz); do echo $item; done
+     for num in {0..9}; do echo $num; done
+     '''
+
+   'pdf combine':
+     'prefix': 'pdf'
+     'body': '''
+     gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=out.pdf in1.pdf in2.pdf
+     '''
+
+   # this shows tree of folders excluding files.
+   'folders':
+     'prefix': 'folders'
+     'body': '''
+     ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
+     '''
+
+   '10 most used commands':
+     'prefix': 'mostused'
+     'body': '''
+     history | awk '{print $2}' | awk 'BEGIN {FS="|"}{print $1}' | sort | uniq -c | sort -n | tail | sort -nr
+     '''
+
+   'function fun':
+     'prefix': 'fun'
+     'body': '''
+     function mkcd () { mkdir -p $1; cd $1; }
+     '''
+
+   'function function':
+     'prefix': 'function'
+     'body': '''
+     function mkcd () { mkdir -p $1; cd $1; }
+     '''
+# Below this python.
+##==============================================================================
+##          Python SNIPPETS
+##==============================================================================
+'.source.python':
+    'Example of snippet in atom':
+        'prefix': 'egsni'
+        'body': '''
+        This is line 1 and placeholder ${1:arg1}.
+        This is line 2 and another placeholder ${2:arg2}.
+        $0
+        '''
+        'description': '''
+        This description is optional.
+        To create snippets go to Atom > Snippets.
+        
+        Example:
+          
+        '.source.python':
+            'hello world':
+                'prefix': 'hello'
+                'body': 'Hello World!'
+                  
+        To find the scope name go to Atom preferences.
+        Then go to packages.        
+        Type language, it will give all languages.
+        Click settings.
+        See things like source.c
+        '''
+
+    #======================== Python Typos Begin ==============================
+
+    '':
+        'prefix': ''
+        'body': ''
+    '':
+        'prefix': ''
+        'body': ''
+    '':
+        'prefix': ''
+        'body': ''
+    '':
+        'prefix': ''
+        'body': ''
+    'the':
+        'prefix': 'hte'
+        'body': 'the'
+    'matirx':
+        'prefix': 'matirx'
+        'body': 'matrix'
+
+    #======================== Python Typos End ================================
+
+    #======================== Python Bhishan Begin ============================
+
+    'Nice Things':
+        'prefix': 'nice'
+        'body': '''
+        data = np.genfromtxt('ion_variables.less',delimiter=r'\s+',dtype='U').astype(str)
+        np.savetxt('a.txt',data,fmt='%-{:d}s'.format(data.dtype.itemsize))
+        '''
+    #================ End  :   Python Typos End ==========================
+    #================ Begin: Machine Learning ============================
+
+    'Append ones':
+        'prefix': 'ones'
+        'body': '''
+        np.append(np.ones_like(ttrain), Xtrain, axis=1)
+        X = np.hstack([np.matrix(np.ones(len(X))).T, X])
+        '''
+
+    'statsmodel':
+        'prefix': 'sm'
+        'body': 'import statsmodels.api as sm'
+
+    'import poly':
+        'prefix': 'poly'
+        'body': 'import numpy.polynomial.polynomial as poly'
+
+    'import inner1d':
+        'prefix': 'inner1d'
+        'body': 'from numpy.core.umath_tests import inner1d'
+
+    'import optimize':
+        'prefix': 'optimize'
+        'body': 'from scipy import optimize'
+
+    'import optimize opt':
+        'prefix': 'opt'
+        'body': 'from scipy import optimize'
+
+    'import numpy linalg':
+        'prefix': 'linalg'
+        'body': 'from numpy.linalg import inv,norm,lstsq'
+
+    'import scikit mse':
+        'prefix': 'mse'
+        'body': 'from sklearn.metrics import mean_squared_error'
+
+    'import argparse':
+        'prefix': 'argparse'
+        'body': 'import argparse'
+
+    'Inverse':
+        'prefix': 'i'
+        'body': '$1^{-1}\ $2'
+
+    'Power Superscript':
+        'prefix': 'p'
+        'body': '$1^{}\ $2'
+
+    'Subscript':
+        'prefix': 'u'
+        'body': '$1_{}\ $2'
+
+    'einestein sum':
+        'prefix': 'einsum'
+        'body': '''
+        np.einsum('ij,ij->i',a,a)
+        np.einsum('...i,...i', V, V)
+        '''
+
+    'Print hypothesis':
+        'prefix': 'prh'
+        'body': 'print("h = \\\\n", h)'
+
+    'debug':
+        'prefix': 'd'
+        'body': '''
+
+        # debug
+        \ $1
+        '''
+
+    'Argument Parser':
+        'prefix': 'parser'
+        'body': """
+        # Argument parser
+        parser = argparse.ArgumentParser('Program.')
+       
+        # Add a argument 
+        parser.add_argument('-i', '--indir',
+                            type=str,
+                            default='data',
+                            help='Input directory.')
+        
+        
+        FLAGS, unparsed = parser.parse_known_args()
+        indir = FLAGS.indir
+            
+        """
+    'Argument Parser in ML':
+        'prefix': 'args'
+        'body': """
+        def parse_args():
+            # Argument parser
+            parser = argparse.ArgumentParser('Softmax Exercise.')
+           
+            # Add a argument 
+            parser.add_argument('-i', '--input_data_dir',
+                                type=str,
+                                default='../../data/mnist/',
+                                help='Directory to put the input MNIST data.')
+            
+            # Add another argument
+            parser.add_argument('-d', '--debug',
+                                action='store_true',
+                                help='Used for gradient checking.')
+            
+            FLAGS, unparsed = parser.parse_known_args()
+            
+            print("FLAGS.input_data_dir = {}".format(FLAGS.input_data_dir))
+            print("FLAGS.debug = {}".format(FLAGS.debug))
+            
+            return FLAGS
+        """
+
+    '':
+        'prefix': ''
+        'body': ''
+
+    '':
+        'prefix': ''
+        'body': ''
+    #===============End  :  Machine Learning =================================
+    #===============Begin:  MPI              =================================
+    'mpi':
+        'prefix': 'mpi'
+        'body': '''
+        from mpi4py import MPI
+        
+        size = MPI.COMM_WORLD.Get_size()
+        rank = MPI.COMM_WORLD.Get_rank()
+        '''
+    #===============End:  MPI =================================
+    'lines':
+        'prefix': 'lines'
+        'body': '##=======================================================================\n## $1\n\##=======================================================================$0'
+
+    'Header':
+        'prefix': 'h'
+        'body': '''
+        #!python
+        # -*- coding: utf-8 -*-#
+        """
+        $1
+        
+        @author: Bhishan Poudel
+
+        @date: $2
+
+        """
+        # Imports
+        $3
+        '''
+
+    'Table Plot':
+        'prefix': 'table_plot'
+        'body': '''
+        fig, ax =plt.subplots()
+        table_data = np.random.random((10,3))
+        collabel=("c1", "c2", "c3")
+        ax.axis('tight')
+        ax.axis('off')
+        the_table = ax.table(cellText=table_data,colLabels=collabel,loc='center')
+        ax.plot(table_data[:,0],table_data[:,1])
+        plt.show()
+        '''
+
+
+    'Line':
+        'prefix': 'line'
+        'body': '''
+        #===========================================================
+        '''
+
+
+    'egall':
+        'prefix': 'egall'
+        'body': '''
+        def eg1():
+            $1
+            
+        def main():
+            """Run main function."""
+            eg1()
+
+        if __name__ == "__main__":
+            main()
+        '''
+
+    'eg':
+        'prefix': 'eg'
+        'body': '''
+        def eg1():
+        $1
+        '''
+
+    'egg':
+        'prefix': 'eg'
+        'body': '''
+            def eg1():
+        $1
+        '''
+
+    'eg2':
+        'prefix': 'eg2'
+        'body': '''
+        def eg2():
+            $1
+        '''
+
+    'eg3':
+        'prefix': 'eg3'
+        'body': '''
+        def eg3():
+            $1
+        '''
+
+    'eg4':
+        'prefix': 'eg4'
+        'body': '''
+        def eg4():
+            $1
+        '''
+
+    'eg5':
+        'prefix': 'eg5'
+        'body': '''
+        def eg5():
+            $1
+        '''
+
+    'Header hdr':
+        'prefix': 'hdr'
+        'body': '#!/Users/poudel/anaconda/bin/python\n# -*- coding: utf-8 -*-#\n#\n# Author      : Bhishan Poudel; Physics Graduate Student, Ohio University\n# Date        : $1\n# Last update :\n# Est time    :\n\n# Imports\n$2$0'
+
+    'import multiprocessing':
+        'prefix': 'mp'
+        'body': 'mp=import multiprocessing as mp'
+
+    'import numpy np':
+        'prefix': 'np'
+        'body': '''
+        import numpy as np
+        '''
+
+    'import sklearn':
+        'prefix': 'sk'
+        'body': '''
+        import sklearn
+        '''
+
+    'import itertools':
+        'prefix': 'it'
+        'body': '''
+        import itertools
+        '''
+
+    'np.array':
+        'prefix': 'npa'
+        'body': '''
+        np.array([$1,$2,$3,$4])
+        '''
+
+    'import numpy print options':
+        'prefix': 'prt'
+        'body': '''
+        np.set_printoptions(formatter={'float': lambda x: "{:,.4g} ".format(x)})
+        '''
+
+    'import numpy linalg ':
+        'prefix': 'linalg'
+        'body': '''
+        from numpy.linalg import norm,lstsq,inv
+        '''
+
+    'numpy print options':
+        'prefix': 'print'
+        'body': '''
+        np.set_printoptions(formatter={'float': lambda x: "{:,.4g} ".format(x)})
+        '''
+
+    'NOTE':
+        'prefix': 'note'
+        'body': 'NOTE: '
+
+    'XXX':
+        'prefix': 'x'
+        'body': 'XXX: '
+        'body': 'NOTE: '
+
+    'slicing':
+        'prefix': 'slicing'
+        'body': '''
+        data     = np.arange(20).reshape((5,4))
+        col0     = data[:, [0] ]
+        col0a     = data[:, 0 ]
+        col0_1   = data[:, [0,1]]
+        col0_1a  = data[:, :2]
+        not_col0 = data[:, 1:]
+        last_column_array = data[:, -1]
+        last_column_vec = data[:, [-1]]
+        not_last = data[:,:-1]
+        '''
+
+    'plt title':
+        'prefix': 'pt'
+        'body': 'plt.title("$1")'
+
+    '':
+        'prefix': ''
+        'body': ''
+
+    'import pandas':
+        'prefix': 'pd'
+        'body': 'import pandas as pd'
+
+    'import scipy':
+        'prefix': 'sp'
+        'body': 'import scipy as sp'
+
+    'import astropy':
+        'prefix': 'ap'
+        'body': 'import astropy.io'
+
+    'import astropy fits':
+        'prefix': 'fits'
+        'body': 'from astropy.io import fits'
+
+    'import astropy fits getheader':
+        'prefix': 'getheader'
+        'body': 'from astropy.io.fits import getheader'
+
+    'import astropy fits getval':
+        'prefix': 'getval'
+        'body': 'from astropy.io.fits import getval'
+
+    'import astropy fits getdata':
+        'prefix': 'getdata'
+        'body': 'from astropy.io.fits import getdata'
+
+    'print with format':
+        'prefix': 'prf'
+        'body': 'print( \'\{\}\'.format($1))$0'
+
+    'print target':
+        'prefix': 'prt'
+        'body': 'print("t = ", t)$0'
+
+    'print X':
+        'prefix': 'prx'
+        'body': 'print("X = ", X)$0'
+
+
+
+    'print newline':
+        'prefix': 'prn'
+        'body': 'print("\\\\n")'
+
+    'numpy arange for integers':
+        'prefix': 'arange'
+        'body': 'np.arange($1, $2, step = $3) $0'
+
+    'read columns of file using numpy':
+        'prefix': 'fileread'
+        'body': 'infile = "$1"\nx = np.genfromtxt(infile, delimiter=None, usecols=(0),\\\n                  dtype=str, unpack=True)\ny = np.genfromtxt(infile, delimiter=None, usecols=(1),\\\n                  dtype=float, unpack=True)\n$0'
+
+    'fileread using pandas':
+        'prefix': 'filereadpd'
+        'body': 'infile = "$1"\ncolnames = ["col0", "col1"]\ndf = pd.read_csv(infile, sep="\s+", header=None, skiprows=0,\n                 comment="#", names=colnames, usecols=(0, 1))\n\nprint("\{\} \{\} \{\}".format("input file header: \\n", df.head(), "\\n"))$0'
+
+    'time taken to run program':
+        'prefix': 'time'
+        'body': 'import time\n\n# beginning time\nprogram_begin_time = time.time()\nbegin_ctime        = time.ctime()\n\n\n# print the time taken\nprogram_end_time = time.time()\nend_ctime        = time.ctime()\nseconds          = program_end_time - program_begin_time\nm, s             = divmod(seconds, 60)\nh, m             = divmod(m, 60)\nd, h             = divmod(h, 24)\nprint("\\nBegin time: ", begin_ctime)\nprint("End   time: ",  end_ctime, \\n")\nprint("Time taken: \{0: .0f\} days, \{1: .0f\} hours,\\\n      \{2: .0f\} minutes, \{3: f\} seconds.".format(d, h, m, s))\n'
+
+    'function':
+        'prefix': 'def'
+        'body': 'def $1($2):\n    $3\n$0'
+
+    'fn with args':
+        'prefix': 'deff'
+        'body': 'def $1($2):\n    """$3\n\n    Args:\n        $2: $5\n\n    Returns: $6\n\n    """\n    #  $7\n    return ${8:None}$0'
+
+
+    'print':
+        'prefix': 'prr'
+        'body': 'print($1)$0'
+
+    # works for list also
+    # format does not work with formats
+    'print variable value':
+        'prefix': 'pr'
+        'body': '''
+        print("$1 = {}".format($1))
+        '''
+
+    'print ## line':
+        'prefix': 'pr5'
+        'body': '''
+        print("#"*50)
+        '''
+
+
+    'print ':
+        'prefix': 'pri'
+        'body': 'print($0)'
+
+    '2 decimal points for all elements of list':
+        'prefix': 'prl'
+        'body': '''
+        print([float(str(np.round((x), 2))) for x in $1])
+        print([ "{:.2e}".format(x) for x in $1])
+        '''
+
+    'docstring':
+        'prefix': 'doc'
+        'body': '"""$1 """'
+
+    'docstring with Args':
+        'prefix': 'docc'
+        'body': '''
+        """$1
+
+        Args:
+          $2($3): $4
+
+          $5($6): $7
+
+          $8($9): $10
+
+        """
+        '''
+
+    'docstring with Args dox':
+        'prefix': 'dox'
+        'body': '''
+        """$1
+
+        Args:
+          $2($3): $4
+
+          $5($6): $7
+
+          $8($9): $10
+
+        """
+        '''
+
+    'Add argument inside docstring':
+        'prefix': 'ag'
+        'body': '''
+          $1($2): $3
+        '''
+
+    'def main':
+        'prefix': 'main'
+        'body': 'def main():\n    """Run main function."""\n    $1\n\nif __name__ == "__main__":\n    main()$0'
+
+    'if __name__ == __main__':
+        'prefix': 'name'
+        'body': 'if __name__ == "__main__":\n    #\n    $1()'
+
+    'def main with time':
+        'prefix': 'maint'
+        'body': 'def main():\n    """Run main function."""\n    $1\n\nif __name__ == "__main__":\n    import time\n\n    # Beginning time\n    program_begin_time = time.time()\n    begin_ctime        = time.ctime()\n\n    # Run the main program\n    main()\n\n    # Print the time taken\n    program_end_time = time.time()\n    end_ctime        = time.ctime()\n    seconds          = program_end_time - program_begin_time\n    m, s             = divmod(seconds, 60)\n    h, m             = divmod(m, 60)\n    d, h             = divmod(h, 24)\n    print("\\\\nBegin time: ", begin_ctime)\n    print("End   time: ", end_ctime, "\\\\n")\n    print("Time taken: \{0: .0f\} days, \{1: .0f\} hours, \\\\\n      \{2: .0f\} minutes, \{3: f\} seconds.".format(d, h, m, s))\n$0'
+
+    'print value a':
+        'prefix': 'pra'
+        'body': 'print(a)'
+
+    'print weight':
+        'prefix': 'prw'
+        'body': 'print(\'w = \', w)'
+
+
+    'Dictionary Comprehension':
+        'prefix': 'dc'
+        'body': '{${1:key}: ${2:value} for ${3:key}, ${4:value} in ${5:variable}}'
+
+    'List Comprehension':
+        'prefix': 'lc'
+        'body': '[${1:value} for ${2:value} in ${3:variable}]'
+
+    'Print Dictionary Key Values':
+        'prefix': 'prd'
+        'body': 'for key, value in config.items():\n    print (key, " = ", value)'
+
+    'Print List Elements':
+        'prefix': 'prl3'
+        'body': 'for _ in $1:\n    print(_)'
+
+    'From Future Import Libraries':
+        'prefix': 'future'
+        'body': '''from __future__ import print_function, with_statement,division,unicode_literals, absolute_import'''
+
+    'Print a':
+        'prefix': 'pra'
+        'body': """print('a = ', a)"""
+
+    'Print b':
+        'prefix': 'prb'
+        'body': """print('b = ', b) """
+
+    'Print c':
+        'prefix': 'prc'
+        'body': """print('c = ', c) """
+
+    'Print x':
+        'prefix': 'prx'
+        'body': """print('x = ', x) """
+
+    'Print y':
+        'prefix': 'pry'
+        'body': """print('y = ', y) """
+
+    'Print z':
+        'prefix': 'prz'
+        'body': """print('z = ', z) """
+
+    'Print i':
+        'prefix': 'pri'
+        'body': """print('i = ', i) """
+
+    'linspace':
+        'prefix': 'lin'
+        'body': """np.linspace($1,$2,num=$3,endpoint=True)\n"""
+
+    'arange':
+        'prefix': 'ar'
+        'body': """np.arange($1,$2,step=1)\n"""
+
+    'arange ara':
+        'prefix': 'ara'
+        'body': """np.arange($1,$2,step=1)\n"""
+
+    'array':
+        'prefix': 'arr'
+        'body': """np.array($1)\n"""
+
+    'subprocess':
+        'prefix': 'sub'
+        'body': """import subprocess"""
+
+    'subprocess call':
+        'prefix': 'call'
+        'body': """subprocess.call(cmd, shell=True)"""
+
+    '':
+        'prefix': ''
+        'body': """ """
+
+    '':
+        'prefix': ''
+        'body': """ """
+
+
+    #=============== For Python Plotting ===============
+    'import matplotlib.pyplot':
+        'prefix': 'plt'
+        'body': 'import matplotlib.pyplot as plt'
+
+    'plot all':
+        'prefix': 'plotall'
+        'body': '''
+        #!python
+        # -*- coding: utf-8 -*-
+        #
+        # Author      : Bhishan Poudel; Physics PhD Student, Ohio University
+        # Date        : Sep 27, 2016
+        # Last update : Sep 11, 2017 Mon
+
+        # Imports
+        import numpy as np
+        import matplotlib.pyplot as plt
+        import time
+        import os
+        import sys
+        import matplotlib as mpl
+
+        params = {'legend.fontsize': 'x-large',
+                  'xtick.labelsize': 'x-large',
+                  'ytick.labelsize': 'x-large'}
+        mpl.rcParams.update(params)
+        plt.style.use('ggplot')
+        plt.figure(figsize=(6, 8))
+        fig, ax = plt.subplots()
+
+
+        def myplot(x, y):
+          fontsize = 20
+          # ax.scatter(x, y, label='label')
+          plt.plot(x, y, color='k', linestyle="--")
+
+          # text marker
+          # txt = r'$mu=100,  sigma=15$'
+          # plt.text(4, 500, txt)
+
+          # labels
+          ax.set_xlabel('x', fontsize=fontsize)
+
+          # legend
+          ax.legend(loc='best')
+          # ax.legend(loc='upper right')
+
+          # ticks
+          # ax.minorticks_on()
+
+          # major ticks
+          ax.set_xticks(np.arange(min(x), max(x) + 1, 2))
+          # ax.set_yticks(np.arange(min(y), max(y) + 1, (max(y) - min(y)) / len(y)))
+          #
+          # # minor ticks
+          # x_minor_ticks = np.arange(min(x), max(x) + 1, 1)
+          # y_minor_ticks = np.arange(0, 1000 + 0.001, 100)
+          # ax.set_xticks(x_minor_ticks, minor=True)
+          # ax.set_yticks(y_minor_ticks, minor=True)
+
+          # sci notation
+          # ax.ticklabel_format(style='sci', axis='y', scilimits=(0, 0))
+          # ax.yaxis.offsetText.set_fontsize(fontsize)
+
+          # save and close
+          # plt.savefig('myplot.png', dpi=300, bbox_inches='tight')
+          plt.show()
+          plt.close()
+
+
+        def main():
+          """Run main function."""
+          x = np.arange(10)
+          y = x**2
+          myplot(x, y)
+
+
+        if __name__ == "__main__":
+          #  Run the main program
+          main()
+
+
+        '''
+        
+    'ticks':
+        'prefix': 'ticks'
+        'body': '''# ticks
+          # ax.minorticks_on()
+
+          # major ticks
+          ax.set_xticks(np.arange(min(x), max(x) + 1, 2))
+          # ax.set_yticks(np.arange(min(y), max(y) + 1, (max(y) - min(y)) / len(y)))
+          #
+          # # minor ticks
+          # x_minor_ticks = np.arange(min(x), max(x) + 1, 1)
+          # y_minor_ticks = np.arange(0, 1000 + 0.001, 100)
+          # ax.set_xticks(x_minor_ticks, minor=True)
+          # ax.set_yticks(y_minor_ticks, minor=True)
+
+          # sci notation
+          # ax.ticklabel_format(style='sci', axis='y', scilimits=(0, 0))
+          # ax.yaxis.offsetText.set_fontsize(fontsize)
+        '''
+    'save figure':
+        'prefix': 'save'
+        'body': '''plt.savefig("$1.png",dpi = 300, bbox_inches='tight')\n'''
+        
+    'savefig':
+        'prefix': 'savefig'
+        'body': '''plt.savefig("$1.png",dpi = 300, bbox_inches='tight')\n'''
+        
+    'plot fileall':
+        'prefix': 'plotfileall'
+        'body': '''
+        #!python
+        # -*- coding: utf-8 -*-
+        # Author  : Bhishan Poudel
+        # Date    : May 23, 2016
+
+        # Imports
+        import numpy as np
+        import matplotlib.pyplot as plt
+        plt.style.use('ggplot')
+        plt.figure(figsize=(8,6))
+
+        infile = 'bhishan.txt'
+        col0,col1 = np.loadtxt(infile, comments="#", skiprows=0, usecols=(0,1), unpack=True)
+        plt.plot(col0, col1)
+        plt.xlabel('x')
+        plt.ylabel('y')
+        plt.title('Title')
+        plt.show()
+        '''
+        
+    'tableau20 colors':
+        'prefix': 'tableau'
+        'body': '''
+        tableau20 = [(31, 119, 180), (174, 199, 232), (255, 127, 14), (255, 187, 120),
+                     (44, 160, 44), (152, 223, 138), (214, 39, 40), (255, 152, 150),
+                     (148, 103, 189), (197, 176, 213), (140, 86, 75), (196, 156, 148),
+                     (227, 119, 194), (247, 182, 210), (127, 127, 127), (199, 199, 199),
+                     (188, 189, 34), (219, 219, 141), (23, 190, 207), (158, 218, 229)]         
+        # Scale RGB values to the [0,1] for matplotlib
+        tableau20 = [ (t[0]/255.0,t[1]/255.0,t[2]/255.0) for t in tableau20]
+        '''
+                
+    'tableau10blind colors':
+        'prefix': 'tableau10blind'
+        'body': '''
+        tableau10blind = [(0, 107, 164), (255, 128, 14), (171, 171, 171), (89, 89, 89),
+             (95, 158, 209), (200, 82, 0), (137, 137, 137), (163, 200, 236),
+             (255, 188, 121), (207, 207, 207)]
+        # Scale RGB values to the [0,1] for matplotlib
+        tableau10blind = [ (t[0]/255.0,t[1]/255.0,t[2]/255.0) for t in tableau20]
+        '''
+
+    'savefig':
+        'prefix': 'save'
+        'body': '''plt.savefig("$1.png",dpi = 300, bbox_inches='tight')\n'''
+
+    'colors':
+        'prefix': 'colors'
+        'body': '''
+        import numpy as np
+        from matplotlib import pyplot as plt
+
+        plt.style.use('ggplot')
+        plt.figure(figsize=(12,8))
+
+        x = np.arange(10)
+        y = np.exp(x)
+        stepsizes = [1,3,4]
+        color=iter(plt.cm.rainbow(np.linspace(0,1,len(stepsizes))))
+        plt.plot(x,y, label='',c=next(color))
+        plt.show()
+        '''
+
+    'Colors different':
+      'prefix': 'differents'
+      'body': '''
+      ['#4D4D4D', '#5DA5DA', '#FAA43A', '#60BD68', '#F17CB0', 
+                '#B2912F', '#B276B2', '#DECF3F', '#F15854']
+      '''
+
+    'Colors reds':
+      'prefix': 'reds'
+      'body': '''
+      ['#E9967A','#F08080','#CD5C5C','#DC143C',
+              '#B22222','#FF0000']
+      '''
+
+    'Colors blues':
+      'prefix': 'blues'
+      'body': '''
+      ['#011f4b', '#03396c', '#005b96', '#6497b1', '#b3cde0']
+      '''
+
+    'Colors bluered':
+      'prefix': 'bluered'
+      'body': '''
+      ['#051e3e', '#251e3e', '#451e3e', '#651e3e', '#851e3e']
+      '''
+
+    'Colors greens':
+      'prefix': 'greens'
+      'body': '''
+      ['#009688', '#35a79c', '#54b2a9', '#65c3ba', '#83d0c9']
+      '''
+
+    'Colors grays':
+      'prefix': 'grays'
+      'body': '''
+      ['#6e7f80', '#536872', '#708090', '#536878', '#36454f']
+      '''
+
+    'Colors skins':
+      'prefix': 'skins'
+      'body': '''
+      ['#8d5524', '#c68642', '#e0ac69', '#f1c27d', '#ffdbac']
+      '''
+
+    'Colors purples':
+      'prefix': 'purples'
+      'body': '''
+      ['#E6E6FA', '#D8BFD8', '#DDA0DD', '#EE82EE',
+                '#9370DB','#8A2BE2','#8B008B','#4B0082']
+      '''
+
+    'Colors 1':
+      'prefix': 'colors1'
+      'body': '''
+      ['#99B898',   '#9DE0AD',   '#45ADA8',   '#547980',   '#594F4F' ]
+      '''
+
+    'Colors 2':
+      'prefix': 'colors2'
+      'body': '''
+      ['#A8A7A7',   '#CC527A',   '#E8175D',   '#474747',   '#363636' ]
+      '''
+
+    'Colors 3':
+      'prefix': 'colors3'
+      'body': '''
+      ['#A7226E',   '#EC2049',   '#F26B38',   '#F7DB4F',   '#2F9599' ]
+      '''
+
+    'Colors 4':
+      'prefix': 'colors4'
+      'body': '''
+      ['#F8B195',   '#F67280',   '#C06C84',   '#6C5B7B',   '#355C7D' ]
+      '''
+
+    'Colors 5':
+      'prefix': 'colors5'
+      'body': '''
+      ['#FE4365',   '#FC9D9A',   '#F9CDAD',   '#C8C8A9',   '#83AF9B' ]
+      '''
+
+     #=============== For rest docstrings in python ===============
+    'Conents':
+        'prefix': 'contents'
+        'body': '.. contents:: Table of Contents\n   :depth: 3\n\n'
+
+    'Toc Tree':
+        'prefix': 'toc'
+        'body': '.. toctree::\n   :maxdepth: 4\n\n   $1'
+
+    'Header 1 #':
+        'prefix': 'ha'
+        'body': '$1\n################################################################################\n\n'
+
+    'Header 2 *':
+        'prefix': 'hb'
+        'body': '$1\n********************************************************************************\n\n'
+
+    'Header 3 =':
+        'prefix': 'hc'
+        'body': '$1\n================================================================================\n\n'
+
+    'Header 4 -':
+        'prefix': 'hd'
+        'body': '$1\n--------------------------------------------------------------------------------\n\n'
+
+    'Header 5 ^':
+        'prefix': 'he'
+        'body': '$1\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n'
+
+    'Header 6 "':
+        'prefix': 'hf'
+        'body': '$1\n""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""\n\n'
+
+    'Image':
+        'prefix': 'img'
+        'body': '.. image:: ../images/$1.png\n   :height: 100px\n   :width: 400 px\n   :align: center\n'
+
+    'Figure':
+        'prefix': 'fig'
+        'body': '\n.. figure:: ../images/a.png\n    :width: 200px\n    :align: center\n    :height: 100px\n    :alt: alternate text\n    :figclass: align-center\n\n    This is caption.\n'
+
+    'Footnote':
+        'prefix': 'footnote'
+        'body': '[#f1]_  \n\n.. rubric:: Footnotes\n\n.. [#f1] Text of the first footnote.\n\n'
+
+    'Cite':
+        'prefix': 'cite'
+        'body': '[book]_ \n\n.. [book] Name of book'
+
+    'Link':
+        'prefix': 'l'
+        'body': '`Link <$1>`_.'
+
+    'Link Two Lines':
+        'prefix': 'link'
+        'body': '`a link`_.\n\n.. _a link: $1\n\n'
+
+    'Table':
+        'prefix': 'tbl'
+        'body': '\n\n=====  =====  =======\nA      B      A and B\n=====  =====  =======\nF      F      F\nT      F      F\nF      T      F\nT      T      T\n=====  =====  =======\n\n'
+
+    'Table Large':
+        'prefix': 'tbll'
+        'body': '\n\n+------------------------+------------+----------+----------+\n| Header1                | Header 2   | Header 3 | Header 4 |\n+========================+============+==========+==========+\n| ..                     | 12         |   13     | 14       |\n+------------------------+------------+----------+----------+\n| 21                     | 22         | 23       |       24 |\n+------------------------+------------+----------+----------+\n\n'
+
+    'Subscript':
+        'prefix': 'ss'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sub:`2`\ O\n'
+
+    'Subscript':
+        'prefix': 'subscript'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sub:`2`\ O\n'
+
+    'Superscript':
+        'prefix': 'superscript'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sup:`2`\ O\n'
+
+    'Superscript':
+        'prefix': 'ss2'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sup:`2`\ O\n'
+
+    'Code':
+        'prefix': 'code'
+        'body': '::\n\n    $1.'
+
+    'New Line':
+        'prefix': 'n'
+        'body': '\n    $1'
+
+    'New Line Longer':
+        'prefix': 'nn'
+        'body': '\n| $1\n| $2'
+
+    'Doctest':
+        'prefix': 'rdoc'
+        'body': '>>> print ("This is a Doctest block")\nThis is a Doctest block'
+
+    'Hlist':
+        'prefix': 'hlist'
+        'body': '.. hlist::\n   :columns: 3\n\n   * A list of\n   * short items\n   * that should be\n   * displayed\n   * horizontally\n\n'
+
+    'Admonition Note':
+        'prefix': 'note'
+        'body': '.. note::\n\n   $1.'
+
+    'Admonition Seealso':
+        'prefix': 'seealso'
+        'body': '.. seealso::\n\n   $1.'
+
+    'Admonition Seealso Longer':
+        'prefix': 'seealsoo'
+        'body': '.. seealso::\n   Module :py:mod:`zipfile`\n      Documentation of the :py:mod:`zipfile` standard module.\n\n   `GNU tar manual, Basic Tar Format <http://link>`_\n      Documentation for tar archive files, including GNU tar extensions.\n'
+
+    'Admonition Warning':
+        'prefix': 'warning'
+        'body': '.. warning::\n\n   $1.'
+
+    'Admonition Todo':
+        'prefix': 'todo'
+        'body': '.. admonition:: todo\n\n   $1'
+
+    'Admonition Info':
+        'prefix': 'info'
+        'body': '.. admonition:: Info\n\n   $1'
+
+
+    'Math Mode':
+        'prefix': 'm'
+        'body': ':math:`${1:\\\\\\\\alpha no space before last}`'
+
+    'Math Longer':
+        'prefix': 'math'
+        'body': '.. math::\n\n    a='
+
+    'Sum':
+        'prefix': 'sum'
+        'body': '\\\\sum_{n=1}^N'
+
+    'Newline':
+        'prefix': 'n'
+        'body': '\\\\\\\\\\\\\\\\\n'
+
+    'Newline nl':
+        'prefix': 'nl'
+        'body': '\\\\\\\\\\\\\\\\\n'
+
+    'Newline newline':
+        'prefix': 'newline'
+        'body': '\\\\\\\\\\\\\\\\\n'
+
+    'Topic':
+        'prefix': 'topic'
+        'body': '.. topic:: Topic\n\n    $1.'
+
+    'Sidebar':
+        'prefix': 'sidebar'
+        'body': '.. sidebar:: Sidebar\n\n   $1.'
+
+    'Test Code':
+        'prefix': 'test'
+        'body': '.. testcode::\n\n    print("hi")\n\n.. testoutput::\n\n    hi\n'
+
+    'Class':
+        'prefix': 'rclass'
+        'body': ':class:`~className` '
+
+    'Method':
+        'prefix': 'meth'
+        'body': ':meth:`~className.method`'
+
+    'Single Index':
+        'prefix': 'single_index'
+        'body': '..  index::\nsingle: Pythagoras # gives bad>poetry and poetry>bad.'
+
+    'Paired Index':
+        'prefix': 'paired_index'
+        'body': '..  index::\npair: poetry; bad # gives bad>poetry and poetry>bad.'
+
+    'Frac Command':
+        'prefix': 'fr'
+        'body': '\\\\\\\\frac{$1}{$2}'
+
+    'Frac Command frac':
+        'prefix': 'frac'
+        'body': '\\\\\\\\frac{$1}{$2}'
+
+    'Arguments':
+        'prefix': 'arg'
+        'body': '''
+        Parameters
+        ----------
+         $1 :
+            $2
+         $3 : str
+            $4
+
+        Returns
+        -------
+        None
+            This function returns nothing.
+
+        '''
+    #---------------------Snippets added later -------------------------
+    'MacOS Desktop Nofitication':
+            'prefix': 'notify'
+            'body': '''
+            def notify():
+            \ \ \ \ """Using desktop notifications in macos.
+
+            \ \ \ \ ..note::
+
+            \ \ \ \ To keep the notification button until you close it chage the
+            \ \ \ \ system preferences of the notifications.
+            \ \ \ \ System Preferences > Nofitications > Script Editor > Check all and choose alert
+
+            \ \ \ \ """
+            \ \ \ \ osa = r\'\'\'osascript -e \'display notification \'\'\'
+            \ \ \ \ tm = time.ctime()
+            \ \ \ \ msg = "\\\\" Program finished on \\\\n {}\\\\"".format(tm)
+            \ \ \ \ title = r\'\'\'with title "Notification"\'\'\'
+            \ \ \ \ notif = osa + msg + title + "\'&"
+            \ \ \ \ subprocess.call(notif, shell=True)
+            $0
+            '''
+
+##==============================================================================
+##  Language sphinx snippets (*.rst)
+##==============================================================================
+'.text.restructuredtext':
+    'Contents':
+        'prefix': 'hdr'
+        'body': '.. contents:: Table of Contents\n   :depth: 3\n\n'
+
+    'Contents':
+        'prefix': 'contents'
+        'body': '.. contents:: Table of Contents\n   :depth: 3\n\n'
+
+    'Toc Tree':
+        'prefix': 'toc'
+        'body': '.. toctree::\n   :maxdepth: 4\n\n   $1'
+
+    'Header 1 #':
+        'prefix': 'ha'
+        'body': '$1\n################################################################################\n\n'
+
+    'Header 2 *':
+        'prefix': 'hb'
+        'body': '$1\n********************************************************************************\n\n'
+
+    'Header 3 =':
+        'prefix': 'hc'
+        'body': '$1\n================================================================================\n\n'
+
+    'Header 4 -':
+        'prefix': 'hd'
+        'body': '$1\n--------------------------------------------------------------------------------\n\n'
+
+    'Header 5 ^':
+        'prefix': 'he'
+        'body': '$1\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n'
+
+    'Header 6 "':
+        'prefix': 'hf'
+        'body': '$1\n""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""\n\n'
+
+    'Image':
+        'prefix': 'img'
+        'body': '.. image:: ../../img/$1.png\n\n$2'
+
+        #'body': '.. image:: ../images/$1.png\n   :height: 100px\n   :width: 400 px\n   :align: center\n'
+
+    'Figure':
+        'prefix': 'fig'
+        'body': '\n.. figure:: ../images/a.png\n    :width: 200px\n    :align: center\n    :height: 100px\n    :alt: alternate text\n    :figclass: align-center\n\n    This is caption.\n'
+
+    'Footnote':
+        'prefix': 'footnote'
+        'body': '[#f1]_  \n\n.. rubric:: Footnotes\n\n.. [#f1] Text of the first footnote.\n\n'
+
+    'Cite':
+        'prefix': 'cite'
+        'body': '[book]_ \n\n.. [book] Name of book'
+
+    'Link':
+        'prefix': 'link'
+        'body': '`Link text <$1>`_'
+
+    'Link Two Lines':
+        'prefix': 'link2'
+        'body': '`a link`_.\n\n.. _a link: $1\n\n'
+
+    'Table':
+        'prefix': 'tbl'
+        'body': '\n\n=====  =====  =======\nA      B      A and B\n=====  =====  =======\nF      F      F\nT      F      F\nF      T      F\nT      T      T\n=====  =====  =======\n\n'
+
+    'Table Large':
+        'prefix': 'tbl2'
+        'body': '\n\n+------------------------+------------+----------+----------+\n| Header1                | Header 2   | Header 3 | Header 4 |\n+========================+============+==========+==========+\n| ..                     | 12         |   13     | 14       |\n+------------------------+------------+----------+----------+\n| 21                     | 22         | 23       |       24 |\n+------------------------+------------+----------+----------+\n\n'
+
+    'Subscript':
+        'prefix': 'ss'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sub:`2`\ O\n'
+
+    'Subscript':
+        'prefix': 'subscript'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sub:`2`\ O\n'
+
+    'Superscript':
+        'prefix': 'superscript'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sup:`2`\ O\n'
+
+    'Superscript':
+        'prefix': 'ss2'
+        'body': '|H2O|\n\n.. |H2O| replace:: H\ :sup:`2`\ O\n'
+
+    'Code':
+        'prefix': 'code'
+        'body': '::\n\n    $1.'
+
+    'New Line':
+        'prefix': 'n'
+        'body': '\n    $1'
+
+    'New Line Longer':
+        'prefix': 'nn'
+        'body': '\n| $1\n| $2'
+
+    'Doctest':
+        'prefix': 'doc'
+        'body': '>>> print ("This is a Doctest block")\nThis is a Doctest block'
+
+    'Hlist':
+        'prefix': 'hlist'
+        'body': '.. hlist::\n   :columns: 3\n\n   * A list of\n   * short items\n   * that should be\n   * displayed\n   * horizontally\n\n'
+
+    'Admonition Seealso':
+        'prefix': 'seealso'
+        'body': '.. seealso::\n\n   $1'
+
+    'Admonition Note':
+        'prefix': 'note'
+        'body': '.. note::\n\n   $1'
+
+    'Admonition Seealso Longer':
+        'prefix': 'seealsoo'
+        'body': '.. seealso::\n   Module :py:mod:`zipfile`\n      Documentation of the :py:mod:`zipfile` standard module.\n\n   `GNU tar manual, Basic Tar Format <http://link>`_\n      Documentation for tar archive files, including GNU tar extensions.\n'
+
+    'Admonition Warning':
+        'prefix': 'warning'
+        'body': '.. warning::\n\n   $1'
+
+    'Admonition Todo':
+        'prefix': 'todo'
+        'body': '.. admonition:: todo\n\n   $1'
+
+    'Admonition Info':
+        'prefix': 'info'
+        'body': '.. admonition:: Info\n\n   $1'
+
+    'Math':
+        'prefix': 'math'
+        'body': '.. math:: $1'
+
+    'Math Longer':
+        'prefix': 'maths'
+        'body': '.. math::\n\n    n_{\mathrm{offset}} = \sum_{k=0}^{N-1} s_k n_k\n'
+
+    'Topic':
+        'prefix': 'topic'
+        'body': '.. topic:: Topic\n\n    $1.'
+
+    'Sidebar':
+        'prefix': 'sidebar'
+        'body': '.. sidebar:: Sidebar\n\n   $1.'
+
+    'Test Code':
+        'prefix': 'test'
+        'body': '.. testcode::\n\n    print("hi")\n\n.. testoutput::\n\n    hi\n'
+
+    'Class':
+        'prefix': 'class'
+        'body': ':class:`~className` '
+
+    'Method':
+        'prefix': 'meth'
+        'body': ':meth:`~className.method`'
+
+    'Single Index':
+        'prefix': 'single_index'
+        'body': '..  index::\nsingle: Pythagoras # gives bad>poetry and poetry>bad.'
+
+    'Paired Index':
+        'prefix': 'paired_index'
+        'body': '..  index::\npair: poetry; bad # gives bad>poetry and poetry>bad.'
+
+    'Frac Command':
+        'prefix': 'frac'
+        'body': '\\\\frac{$1}{$2}'
+
+    'Fr Command':
+        'prefix': 'fr'
+        'body': '\\\\frac{$1}{$2}'
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+##==============================================================================
+##  Markdown Snippets
+##==============================================================================
+# '.source.gfm':
+'.text.md':
+  'Double Dollars':
+    'prefix': 'dd'
+    'body': '''
+    \$\$
+    $1
+    \$\$
+    '''
+
+  'Inline Code':
+    'prefix': 'cc'
+    'body': '''`$1`\ $0'''
+
+  'Code block':
+    'prefix': 'cb'
+    'body': '''
+    ```python
+    $1
+    ```
+    '''
+
+  # when used b, b and tab will autocomplete, xb is better.
+  'bold text':
+    'prefix': 'xb'
+    'body': '**$1**$0'
+
+  'code':
+    'prefix': 'code'
+    'body': """
+      ```$1
+      $2
+      ```$0
+    """
+
+  'italic text':
+    'prefix': 'it'
+    'body': '*$1*$0'
+
+  'embedded image':
+    'prefix': 'img'
+    'body': '![$1]($2)$0'
+
+  'link':
+    'prefix': 'link'
+    'body': '[$1]($2)$0'
+
+  'bullet point':
+    'prefix': 'bullet'
+    'body': '- $1'
+
+  'reference':
+    'prefix': 'ref'
+    'body': '[${1:id}]: ${2:url}${3: "${4:title}"}$0'
+
+  'reference image':
+    'prefix': 'rimg'
+    'body': '![$1][$2]$0'
+
+  'reference link':
+    'prefix': 'rl'
+    'body': '[$1][$2]$0'
+
+  'todo':
+    'prefix': 'todo'
+    'body': '- [ ] $1'
+
+  # Use markdown-table-editor for table
+  # first tbl will replace |-| and it will activate table-editor
+  # hit tab ==> created new column, write something, then only go back
+  # hit enter ==> created new rows
+  # hit escape ==> ends table-editor environment
+  'table':
+    'prefix': 'tbl'
+    'body': '|-|'
+
+  'Header1':
+    'prefix': 'hdr'
+    'body': """
+      <!-- #================================================* -->
+      <!-- # Header:                                          -->
+      <!-- #================================================* -->
+      ## $1
+      $0
+    """
+
+  'Header2 hh':
+    'prefix': 'hh'
+    'body': """
+      <!-- #*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
+      ## $1
+      $0
+    """
+
+  'Header2 h2':
+    'prefix': 'h2'
+    'body': """
+      <!-- #*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+      ## $1
+      $0
+    """
+
+  'Header2 hhh':
+    'prefix': 'hhh'
+    'body': """
+      <!-- #--#--#--#--#--#--#--#--#--# -->
+      ## $1
+      $0
+    """
+
+  'Header2 h3':
+    'prefix': 'h3'
+    'body': """
+      <!-- #--#--#--#--#--#--#--#--#--#--# -->
+      ## $1
+      $0
+    """

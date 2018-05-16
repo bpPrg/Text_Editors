@@ -1,0 +1,8 @@
+Author: Bhishan Poudel
+Date  : Sep 19, 2017
+
+Topic: Latex package clean patterns
+====================================
+
+1. Use following files for latex clean options:
+**/*.aux, **/*.aux.bak, **/*.bbl, **/*.bcf, **/*.blg, **/*.dvi, **/*.fdb_latexmk, **/*.fls, **/*.idx, **/*.idx.bak, **/*.ilg, **/*.ind, **/*.lof, **/*.log, **/*.lol, **/*.lot, **/*.nav, **/*.out, **/*.pdf, **/*.ps, **/*.snm, **/*.synctex.gz, **/*.toc, /**/_minted-{jobname}, /{output_dir}/sage-plots-for-{jobname}.tex, /missfont.log, /texput.log, /texput.aux, *.out, *.aux, *.acn, *.bbl, *.blg, *.fdb_latexmk, *.fls, *.glo, *.lof, *.lot, *.out, *.toc, *.xdy

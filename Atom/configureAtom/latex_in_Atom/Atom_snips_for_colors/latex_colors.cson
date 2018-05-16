@@ -1,0 +1,545 @@
+  # Beamer Colors
+  'Beamer Color Apricot':
+    'prefix': 'c1'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Apricot]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Bittersweet':
+    'prefix': 'c2'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Bittersweet]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Blue':
+    'prefix': 'c3'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Blue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color BlueViolet':
+    'prefix': 'c4'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=BlueViolet]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Brown':
+    'prefix': 'c5'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Brown]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color CadetBlue':
+    'prefix': 'c6'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=CadetBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Cerulean':
+    'prefix': 'c7'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Cerulean]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Cyan':
+    'prefix': 'c8'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Cyan]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color DarkOrchid':
+    'prefix': 'c9'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=DarkOrchid]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color ForestGreen':
+    'prefix': 'c10'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=ForestGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Goldenrod':
+    'prefix': 'c11'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Goldenrod]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Green':
+    'prefix': 'c12'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Green]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color JungleGreen':
+    'prefix': 'c13'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=JungleGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color LimeGreen':
+    'prefix': 'c14'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=LimeGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Mahogany':
+    'prefix': 'c15'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Mahogany]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Melon':
+    'prefix': 'c16'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Melon]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Mulberry':
+    'prefix': 'c17'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Mulberry]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color OliveGreen':
+    'prefix': 'c18'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=OliveGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color OrangeRed':
+    'prefix': 'c19'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=OrangeRed]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Peach':
+    'prefix': 'c20'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Peach]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color PineGreen':
+    'prefix': 'c21'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=PineGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color ProcessBlue':
+    'prefix': 'c22'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=ProcessBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color RawSienna':
+    'prefix': 'c23'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RawSienna]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color RedOrange':
+    'prefix': 'c24'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RedOrange]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Rhodamine':
+    'prefix': 'c25'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Rhodamine]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color RoyalPurple':
+    'prefix': 'c26'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RoyalPurple]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Salmon':
+    'prefix': 'c27'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Salmon]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Sepia':
+    'prefix': 'c28'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Sepia]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color SpringGreen':
+    'prefix': 'c29'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=SpringGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color TealBlue':
+    'prefix': 'c30'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=TealBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Turquoise':
+    'prefix': 'c31'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Turquoise]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color VioletRed':
+    'prefix': 'c32'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=VioletRed]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color WildStrawberry':
+    'prefix': 'c33'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=WildStrawberry]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color YellowGreen':
+    'prefix': 'c34'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=YellowGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Aquamarine':
+    'prefix': 'c35'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Aquamarine]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color White':
+    'prefix': 'c36'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=White]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color BlueGreen':
+    'prefix': 'c37'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=BlueGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color BrickRed':
+    'prefix': 'c38'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=BrickRed]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color BurntOrange':
+    'prefix': 'c39'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=BurntOrange]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color CarnationPink':
+    'prefix': 'c40'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=CarnationPink]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color CornflowerBlue':
+    'prefix': 'c41'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=CornflowerBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Dandelion':
+    'prefix': 'c42'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Dandelion]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Emerald':
+    'prefix': 'c43'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Emerald]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Fuchsia':
+    'prefix': 'c44'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Fuchsia]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Gray':
+    'prefix': 'c45'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Gray]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color GreenYellow':
+    'prefix': 'c46'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=GreenYellow]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Lavender':
+    'prefix': 'c47'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Lavender]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Magenta':
+    'prefix': 'c48'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Magenta]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Maroon':
+    'prefix': 'c49'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Maroon]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color MidnightBlue':
+    'prefix': 'c50'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=MidnightBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color NavyBlue':
+    'prefix': 'c51'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=NavyBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Orange':
+    'prefix': 'c52'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Orange]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Orchid':
+    'prefix': 'c53'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Orchid]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Periwinkle':
+    'prefix': 'c54'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Periwinkle]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Plum':
+    'prefix': 'c55'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Plum]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Purple':
+    'prefix': 'c56'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Purple]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Red':
+    'prefix': 'c57'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Red]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color RedViolet':
+    'prefix': 'c58'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RedViolet]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color RoyalBlue':
+    'prefix': 'c59'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RoyalBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color RubineRed':
+    'prefix': 'c60'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=RubineRed]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color SeaGreen':
+    'prefix': 'c61'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=SeaGreen]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color SkyBlue':
+    'prefix': 'c62'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=SkyBlue]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Tan':
+    'prefix': 'c63'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Tan]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Thistle':
+    'prefix': 'c64'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Thistle]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Violet':
+    'prefix': 'c65'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Violet]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color White':
+    'prefix': 'c66'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=White]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color Yellow':
+    'prefix': 'c67'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=Yellow]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        
+  'Beamer Color YellowOrange':
+    'prefix': 'c68'
+    'body': '''
+    \\\\begin{tcolorbox}[colback=blue!5!white,colframe=YellowOrange]
+    \  $1
+    \\\\end{tcolorbox}
+    '''
+        

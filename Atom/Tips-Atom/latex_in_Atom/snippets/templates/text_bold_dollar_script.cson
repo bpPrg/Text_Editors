@@ -1,0 +1,1058 @@
+ 
+  #-----------------------------------------------------------------------------
+  # Text Bold a
+  'Text Bold a':
+    'prefix': 'tba'
+    'body': '\\\\boldsymbol{\\\\a}\ $0'
+
+  'Text Bold b':
+    'prefix': 'tbb'
+    'body': '\\\\boldsymbol{\\\\b}\ $0'
+
+  'Text Bold c':
+    'prefix': 'tbc'
+    'body': '\\\\boldsymbol{\\\\c}\ $0'
+
+  'Text Bold d':
+    'prefix': 'tbd'
+    'body': '\\\\boldsymbol{\\\\d}\ $0'
+
+  'Text Bold e':
+    'prefix': 'tbe'
+    'body': '\\\\boldsymbol{\\\\e}\ $0'
+
+  'Text Bold f':
+    'prefix': 'tbf'
+    'body': '\\\\boldsymbol{\\\\f}\ $0'
+
+  'Text Bold g':
+    'prefix': 'tbg'
+    'body': '\\\\boldsymbol{\\\\g}\ $0'
+
+  'Text Bold h':
+    'prefix': 'tbh'
+    'body': '\\\\boldsymbol{\\\\h}\ $0'
+
+  'Text Bold i':
+    'prefix': 'tbi'
+    'body': '\\\\boldsymbol{\\\\i}\ $0'
+
+  'Text Bold j':
+    'prefix': 'tbj'
+    'body': '\\\\boldsymbol{\\\\j}\ $0'
+
+  'Text Bold k':
+    'prefix': 'tbk'
+    'body': '\\\\boldsymbol{\\\\k}\ $0'
+
+  'Text Bold l':
+    'prefix': 'tbl'
+    'body': '\\\\boldsymbol{\\\\l}\ $0'
+
+  'Text Bold m':
+    'prefix': 'tbm'
+    'body': '\\\\boldsymbol{\\\\m}\ $0'
+
+  'Text Bold n':
+    'prefix': 'tbn'
+    'body': '\\\\boldsymbol{\\\\n}\ $0'
+
+  'Text Bold o':
+    'prefix': 'tbo'
+    'body': '\\\\boldsymbol{\\\\o}\ $0'
+
+  'Text Bold p':
+    'prefix': 'tbp'
+    'body': '\\\\boldsymbol{\\\\p}\ $0'
+
+  'Text Bold q':
+    'prefix': 'tbq'
+    'body': '\\\\boldsymbol{\\\\q}\ $0'
+
+  'Text Bold r':
+    'prefix': 'tbr'
+    'body': '\\\\boldsymbol{\\\\r}\ $0'
+
+  'Text Bold s':
+    'prefix': 'tbs'
+    'body': '\\\\boldsymbol{\\\\s}\ $0'
+
+  'Text Bold t':
+    'prefix': 'tbt'
+    'body': '\\\\boldsymbol{\\\\t}\ $0'
+
+  'Text Bold u':
+    'prefix': 'tbu'
+    'body': '\\\\boldsymbol{\\\\u}\ $0'
+
+  'Text Bold v':
+    'prefix': 'tbv'
+    'body': '\\\\boldsymbol{\\\\v}\ $0'
+
+  'Text Bold w':
+    'prefix': 'tbw'
+    'body': '\\\\boldsymbol{\\\\w}\ $0'
+
+  'Text Bold x':
+    'prefix': 'tbx'
+    'body': '\\\\boldsymbol{\\\\x}\ $0'
+
+  'Text Bold y':
+    'prefix': 'tby'
+    'body': '\\\\boldsymbol{\\\\y}\ $0'
+
+  'Text Bold z':
+    'prefix': 'tbz'
+    'body': '\\\\boldsymbol{\\\\z}\ $0'
+
+  'Text Bold A':
+    'prefix': 'tbA'
+    'body': '\\\\boldsymbol{\\\\A}\ $0'
+
+  'Text Bold B':
+    'prefix': 'tbB'
+    'body': '\\\\boldsymbol{\\\\B}\ $0'
+
+  'Text Bold C':
+    'prefix': 'tbC'
+    'body': '\\\\boldsymbol{\\\\C}\ $0'
+
+  'Text Bold D':
+    'prefix': 'tbD'
+    'body': '\\\\boldsymbol{\\\\D}\ $0'
+
+  'Text Bold E':
+    'prefix': 'tbE'
+    'body': '\\\\boldsymbol{\\\\E}\ $0'
+
+  'Text Bold F':
+    'prefix': 'tbF'
+    'body': '\\\\boldsymbol{\\\\F}\ $0'
+
+  'Text Bold G':
+    'prefix': 'tbG'
+    'body': '\\\\boldsymbol{\\\\G}\ $0'
+
+  'Text Bold H':
+    'prefix': 'tbH'
+    'body': '\\\\boldsymbol{\\\\H}\ $0'
+
+  'Text Bold I':
+    'prefix': 'tbI'
+    'body': '\\\\boldsymbol{\\\\I}\ $0'
+
+  'Text Bold J':
+    'prefix': 'tbJ'
+    'body': '\\\\boldsymbol{\\\\J}\ $0'
+
+  'Text Bold K':
+    'prefix': 'tbK'
+    'body': '\\\\boldsymbol{\\\\K}\ $0'
+
+  'Text Bold L':
+    'prefix': 'tbL'
+    'body': '\\\\boldsymbol{\\\\L}\ $0'
+
+  'Text Bold M':
+    'prefix': 'tbM'
+    'body': '\\\\boldsymbol{\\\\M}\ $0'
+
+  'Text Bold N':
+    'prefix': 'tbN'
+    'body': '\\\\boldsymbol{\\\\N}\ $0'
+
+  'Text Bold O':
+    'prefix': 'tbO'
+    'body': '\\\\boldsymbol{\\\\O}\ $0'
+
+  'Text Bold P':
+    'prefix': 'tbP'
+    'body': '\\\\boldsymbol{\\\\P}\ $0'
+
+  'Text Bold Q':
+    'prefix': 'tbQ'
+    'body': '\\\\boldsymbol{\\\\Q}\ $0'
+
+  'Text Bold R':
+    'prefix': 'tbR'
+    'body': '\\\\boldsymbol{\\\\R}\ $0'
+
+  'Text Bold S':
+    'prefix': 'tbS'
+    'body': '\\\\boldsymbol{\\\\S}\ $0'
+
+  'Text Bold T':
+    'prefix': 'tbT'
+    'body': '\\\\boldsymbol{\\\\T}\ $0'
+
+  'Text Bold U':
+    'prefix': 'tbU'
+    'body': '\\\\boldsymbol{\\\\U}\ $0'
+
+  'Text Bold V':
+    'prefix': 'tbV'
+    'body': '\\\\boldsymbol{\\\\V}\ $0'
+
+  'Text Bold W':
+    'prefix': 'tbW'
+    'body': '\\\\boldsymbol{\\\\W}\ $0'
+
+  'Text Bold X':
+    'prefix': 'tbX'
+    'body': '\\\\boldsymbol{\\\\X}\ $0'
+
+  'Text Bold Y':
+    'prefix': 'tbY'
+    'body': '\\\\boldsymbol{\\\\Y}\ $0'
+
+  'Text Bold Z':
+    'prefix': 'tbZ'
+    'body': '\\\\boldsymbol{\\\\Z}\ $0'
+
+ 
+  #-----------------------------------------------------------------------------
+  # Text Dollar a
+  'Text Dollar a':
+    'prefix': 'xxa'
+    'body': '\$a\$\ $0'
+
+  'Text Dollar b':
+    'prefix': 'xxb'
+    'body': '\$b\$\ $0'
+
+  'Text Dollar c':
+    'prefix': 'xxc'
+    'body': '\$c\$\ $0'
+
+  'Text Dollar d':
+    'prefix': 'xxd'
+    'body': '\$d\$\ $0'
+
+  'Text Dollar e':
+    'prefix': 'xxe'
+    'body': '\$e\$\ $0'
+
+  'Text Dollar f':
+    'prefix': 'xxf'
+    'body': '\$f\$\ $0'
+
+  'Text Dollar g':
+    'prefix': 'xxg'
+    'body': '\$g\$\ $0'
+
+  'Text Dollar h':
+    'prefix': 'xxh'
+    'body': '\$h\$\ $0'
+
+  'Text Dollar i':
+    'prefix': 'xxi'
+    'body': '\$i\$\ $0'
+
+  'Text Dollar j':
+    'prefix': 'xxj'
+    'body': '\$j\$\ $0'
+
+  'Text Dollar k':
+    'prefix': 'xxk'
+    'body': '\$k\$\ $0'
+
+  'Text Dollar l':
+    'prefix': 'xxl'
+    'body': '\$l\$\ $0'
+
+  'Text Dollar m':
+    'prefix': 'xxm'
+    'body': '\$m\$\ $0'
+
+  'Text Dollar n':
+    'prefix': 'xxn'
+    'body': '\$n\$\ $0'
+
+  'Text Dollar o':
+    'prefix': 'xxo'
+    'body': '\$o\$\ $0'
+
+  'Text Dollar p':
+    'prefix': 'xxp'
+    'body': '\$p\$\ $0'
+
+  'Text Dollar q':
+    'prefix': 'xxq'
+    'body': '\$q\$\ $0'
+
+  'Text Dollar r':
+    'prefix': 'xxr'
+    'body': '\$r\$\ $0'
+
+  'Text Dollar s':
+    'prefix': 'xxs'
+    'body': '\$s\$\ $0'
+
+  'Text Dollar t':
+    'prefix': 'xxt'
+    'body': '\$t\$\ $0'
+
+  'Text Dollar u':
+    'prefix': 'xxu'
+    'body': '\$u\$\ $0'
+
+  'Text Dollar v':
+    'prefix': 'xxv'
+    'body': '\$v\$\ $0'
+
+  'Text Dollar w':
+    'prefix': 'xxw'
+    'body': '\$w\$\ $0'
+
+  'Text Dollar x':
+    'prefix': 'xxx'
+    'body': '\$x\$\ $0'
+
+  'Text Dollar y':
+    'prefix': 'xxy'
+    'body': '\$y\$\ $0'
+
+  'Text Dollar z':
+    'prefix': 'xxz'
+    'body': '\$z\$\ $0'
+
+  'Text Dollar A':
+    'prefix': 'xxA'
+    'body': '\$A\$\ $0'
+
+  'Text Dollar B':
+    'prefix': 'xxB'
+    'body': '\$B\$\ $0'
+
+  'Text Dollar C':
+    'prefix': 'xxC'
+    'body': '\$C\$\ $0'
+
+  'Text Dollar D':
+    'prefix': 'xxD'
+    'body': '\$D\$\ $0'
+
+  'Text Dollar E':
+    'prefix': 'xxE'
+    'body': '\$E\$\ $0'
+
+  'Text Dollar F':
+    'prefix': 'xxF'
+    'body': '\$F\$\ $0'
+
+  'Text Dollar G':
+    'prefix': 'xxG'
+    'body': '\$G\$\ $0'
+
+  'Text Dollar H':
+    'prefix': 'xxH'
+    'body': '\$H\$\ $0'
+
+  'Text Dollar I':
+    'prefix': 'xxI'
+    'body': '\$I\$\ $0'
+
+  'Text Dollar J':
+    'prefix': 'xxJ'
+    'body': '\$J\$\ $0'
+
+  'Text Dollar K':
+    'prefix': 'xxK'
+    'body': '\$K\$\ $0'
+
+  'Text Dollar L':
+    'prefix': 'xxL'
+    'body': '\$L\$\ $0'
+
+  'Text Dollar M':
+    'prefix': 'xxM'
+    'body': '\$M\$\ $0'
+
+  'Text Dollar N':
+    'prefix': 'xxN'
+    'body': '\$N\$\ $0'
+
+  'Text Dollar O':
+    'prefix': 'xxO'
+    'body': '\$O\$\ $0'
+
+  'Text Dollar P':
+    'prefix': 'xxP'
+    'body': '\$P\$\ $0'
+
+  'Text Dollar Q':
+    'prefix': 'xxQ'
+    'body': '\$Q\$\ $0'
+
+  'Text Dollar R':
+    'prefix': 'xxR'
+    'body': '\$R\$\ $0'
+
+  'Text Dollar S':
+    'prefix': 'xxS'
+    'body': '\$S\$\ $0'
+
+  'Text Dollar T':
+    'prefix': 'xxT'
+    'body': '\$T\$\ $0'
+
+  'Text Dollar U':
+    'prefix': 'xxU'
+    'body': '\$U\$\ $0'
+
+  'Text Dollar V':
+    'prefix': 'xxV'
+    'body': '\$V\$\ $0'
+
+  'Text Dollar W':
+    'prefix': 'xxW'
+    'body': '\$W\$\ $0'
+
+  'Text Dollar X':
+    'prefix': 'xxX'
+    'body': '\$X\$\ $0'
+
+  'Text Dollar Y':
+    'prefix': 'xxY'
+    'body': '\$Y\$\ $0'
+
+  'Text Dollar Z':
+    'prefix': 'xxZ'
+    'body': '\$Z\$\ $0'
+
+ 
+  #-----------------------------------------------------------------------------
+  # Text Bold a Dollar
+  'Text Bold a Dollar':
+    'prefix': 'tbax'
+    'body': '\$\\\\boldsymbol{a}\$\ $0'
+
+  'Text Bold b Dollar':
+    'prefix': 'tbbx'
+    'body': '\$\\\\boldsymbol{b}\$\ $0'
+
+  'Text Bold c Dollar':
+    'prefix': 'tbcx'
+    'body': '\$\\\\boldsymbol{c}\$\ $0'
+
+  'Text Bold d Dollar':
+    'prefix': 'tbdx'
+    'body': '\$\\\\boldsymbol{d}\$\ $0'
+
+  'Text Bold e Dollar':
+    'prefix': 'tbex'
+    'body': '\$\\\\boldsymbol{e}\$\ $0'
+
+  'Text Bold f Dollar':
+    'prefix': 'tbfx'
+    'body': '\$\\\\boldsymbol{f}\$\ $0'
+
+  'Text Bold g Dollar':
+    'prefix': 'tbgx'
+    'body': '\$\\\\boldsymbol{g}\$\ $0'
+
+  'Text Bold h Dollar':
+    'prefix': 'tbhx'
+    'body': '\$\\\\boldsymbol{h}\$\ $0'
+
+  'Text Bold i Dollar':
+    'prefix': 'tbix'
+    'body': '\$\\\\boldsymbol{i}\$\ $0'
+
+  'Text Bold j Dollar':
+    'prefix': 'tbjx'
+    'body': '\$\\\\boldsymbol{j}\$\ $0'
+
+  'Text Bold k Dollar':
+    'prefix': 'tbkx'
+    'body': '\$\\\\boldsymbol{k}\$\ $0'
+
+  'Text Bold l Dollar':
+    'prefix': 'tblx'
+    'body': '\$\\\\boldsymbol{l}\$\ $0'
+
+  'Text Bold m Dollar':
+    'prefix': 'tbmx'
+    'body': '\$\\\\boldsymbol{m}\$\ $0'
+
+  'Text Bold n Dollar':
+    'prefix': 'tbnx'
+    'body': '\$\\\\boldsymbol{n}\$\ $0'
+
+  'Text Bold o Dollar':
+    'prefix': 'tbox'
+    'body': '\$\\\\boldsymbol{o}\$\ $0'
+
+  'Text Bold p Dollar':
+    'prefix': 'tbpx'
+    'body': '\$\\\\boldsymbol{p}\$\ $0'
+
+  'Text Bold q Dollar':
+    'prefix': 'tbqx'
+    'body': '\$\\\\boldsymbol{q}\$\ $0'
+
+  'Text Bold r Dollar':
+    'prefix': 'tbrx'
+    'body': '\$\\\\boldsymbol{r}\$\ $0'
+
+  'Text Bold s Dollar':
+    'prefix': 'tbsx'
+    'body': '\$\\\\boldsymbol{s}\$\ $0'
+
+  'Text Bold t Dollar':
+    'prefix': 'tbtx'
+    'body': '\$\\\\boldsymbol{t}\$\ $0'
+
+  'Text Bold u Dollar':
+    'prefix': 'tbux'
+    'body': '\$\\\\boldsymbol{u}\$\ $0'
+
+  'Text Bold v Dollar':
+    'prefix': 'tbvx'
+    'body': '\$\\\\boldsymbol{v}\$\ $0'
+
+  'Text Bold w Dollar':
+    'prefix': 'tbwx'
+    'body': '\$\\\\boldsymbol{w}\$\ $0'
+
+  'Text Bold x Dollar':
+    'prefix': 'tbxx'
+    'body': '\$\\\\boldsymbol{x}\$\ $0'
+
+  'Text Bold y Dollar':
+    'prefix': 'tbyx'
+    'body': '\$\\\\boldsymbol{y}\$\ $0'
+
+  'Text Bold z Dollar':
+    'prefix': 'tbzx'
+    'body': '\$\\\\boldsymbol{z}\$\ $0'
+
+  'Text Bold A Dollar':
+    'prefix': 'tbAx'
+    'body': '\$\\\\boldsymbol{A}\$\ $0'
+
+  'Text Bold B Dollar':
+    'prefix': 'tbBx'
+    'body': '\$\\\\boldsymbol{B}\$\ $0'
+
+  'Text Bold C Dollar':
+    'prefix': 'tbCx'
+    'body': '\$\\\\boldsymbol{C}\$\ $0'
+
+  'Text Bold D Dollar':
+    'prefix': 'tbDx'
+    'body': '\$\\\\boldsymbol{D}\$\ $0'
+
+  'Text Bold E Dollar':
+    'prefix': 'tbEx'
+    'body': '\$\\\\boldsymbol{E}\$\ $0'
+
+  'Text Bold F Dollar':
+    'prefix': 'tbFx'
+    'body': '\$\\\\boldsymbol{F}\$\ $0'
+
+  'Text Bold G Dollar':
+    'prefix': 'tbGx'
+    'body': '\$\\\\boldsymbol{G}\$\ $0'
+
+  'Text Bold H Dollar':
+    'prefix': 'tbHx'
+    'body': '\$\\\\boldsymbol{H}\$\ $0'
+
+  'Text Bold I Dollar':
+    'prefix': 'tbIx'
+    'body': '\$\\\\boldsymbol{I}\$\ $0'
+
+  'Text Bold J Dollar':
+    'prefix': 'tbJx'
+    'body': '\$\\\\boldsymbol{J}\$\ $0'
+
+  'Text Bold K Dollar':
+    'prefix': 'tbKx'
+    'body': '\$\\\\boldsymbol{K}\$\ $0'
+
+  'Text Bold L Dollar':
+    'prefix': 'tbLx'
+    'body': '\$\\\\boldsymbol{L}\$\ $0'
+
+  'Text Bold M Dollar':
+    'prefix': 'tbMx'
+    'body': '\$\\\\boldsymbol{M}\$\ $0'
+
+  'Text Bold N Dollar':
+    'prefix': 'tbNx'
+    'body': '\$\\\\boldsymbol{N}\$\ $0'
+
+  'Text Bold O Dollar':
+    'prefix': 'tbOx'
+    'body': '\$\\\\boldsymbol{O}\$\ $0'
+
+  'Text Bold P Dollar':
+    'prefix': 'tbPx'
+    'body': '\$\\\\boldsymbol{P}\$\ $0'
+
+  'Text Bold Q Dollar':
+    'prefix': 'tbQx'
+    'body': '\$\\\\boldsymbol{Q}\$\ $0'
+
+  'Text Bold R Dollar':
+    'prefix': 'tbRx'
+    'body': '\$\\\\boldsymbol{R}\$\ $0'
+
+  'Text Bold S Dollar':
+    'prefix': 'tbSx'
+    'body': '\$\\\\boldsymbol{S}\$\ $0'
+
+  'Text Bold T Dollar':
+    'prefix': 'tbTx'
+    'body': '\$\\\\boldsymbol{T}\$\ $0'
+
+  'Text Bold U Dollar':
+    'prefix': 'tbUx'
+    'body': '\$\\\\boldsymbol{U}\$\ $0'
+
+  'Text Bold V Dollar':
+    'prefix': 'tbVx'
+    'body': '\$\\\\boldsymbol{V}\$\ $0'
+
+  'Text Bold W Dollar':
+    'prefix': 'tbWx'
+    'body': '\$\\\\boldsymbol{W}\$\ $0'
+
+  'Text Bold X Dollar':
+    'prefix': 'tbXx'
+    'body': '\$\\\\boldsymbol{X}\$\ $0'
+
+  'Text Bold Y Dollar':
+    'prefix': 'tbYx'
+    'body': '\$\\\\boldsymbol{Y}\$\ $0'
+
+  'Text Bold Z Dollar':
+    'prefix': 'tbZx'
+    'body': '\$\\\\boldsymbol{Z}\$\ $0'
+
+ 
+  #-----------------------------------------------------------------------------
+  # Text Dollar Bold
+  'Text Dollar Bold a ':
+    'prefix': 'xxba'
+    'body': '\$\\\\boldsymbol{a}\$\ $0'
+
+  'Text Dollar Bold b ':
+    'prefix': 'xxbb'
+    'body': '\$\\\\boldsymbol{b}\$\ $0'
+
+  'Text Dollar Bold c ':
+    'prefix': 'xxbc'
+    'body': '\$\\\\boldsymbol{c}\$\ $0'
+
+  'Text Dollar Bold d ':
+    'prefix': 'xxbd'
+    'body': '\$\\\\boldsymbol{d}\$\ $0'
+
+  'Text Dollar Bold e ':
+    'prefix': 'xxbe'
+    'body': '\$\\\\boldsymbol{e}\$\ $0'
+
+  'Text Dollar Bold f ':
+    'prefix': 'xxbf'
+    'body': '\$\\\\boldsymbol{f}\$\ $0'
+
+  'Text Dollar Bold g ':
+    'prefix': 'xxbg'
+    'body': '\$\\\\boldsymbol{g}\$\ $0'
+
+  'Text Dollar Bold h ':
+    'prefix': 'xxbh'
+    'body': '\$\\\\boldsymbol{h}\$\ $0'
+
+  'Text Dollar Bold i ':
+    'prefix': 'xxbi'
+    'body': '\$\\\\boldsymbol{i}\$\ $0'
+
+  'Text Dollar Bold j ':
+    'prefix': 'xxbj'
+    'body': '\$\\\\boldsymbol{j}\$\ $0'
+
+  'Text Dollar Bold k ':
+    'prefix': 'xxbk'
+    'body': '\$\\\\boldsymbol{k}\$\ $0'
+
+  'Text Dollar Bold l ':
+    'prefix': 'xxbl'
+    'body': '\$\\\\boldsymbol{l}\$\ $0'
+
+  'Text Dollar Bold m ':
+    'prefix': 'xxbm'
+    'body': '\$\\\\boldsymbol{m}\$\ $0'
+
+  'Text Dollar Bold n ':
+    'prefix': 'xxbn'
+    'body': '\$\\\\boldsymbol{n}\$\ $0'
+
+  'Text Dollar Bold o ':
+    'prefix': 'xxbo'
+    'body': '\$\\\\boldsymbol{o}\$\ $0'
+
+  'Text Dollar Bold p ':
+    'prefix': 'xxbp'
+    'body': '\$\\\\boldsymbol{p}\$\ $0'
+
+  'Text Dollar Bold q ':
+    'prefix': 'xxbq'
+    'body': '\$\\\\boldsymbol{q}\$\ $0'
+
+  'Text Dollar Bold r ':
+    'prefix': 'xxbr'
+    'body': '\$\\\\boldsymbol{r}\$\ $0'
+
+  'Text Dollar Bold s ':
+    'prefix': 'xxbs'
+    'body': '\$\\\\boldsymbol{s}\$\ $0'
+
+  'Text Dollar Bold t ':
+    'prefix': 'xxbt'
+    'body': '\$\\\\boldsymbol{t}\$\ $0'
+
+  'Text Dollar Bold u ':
+    'prefix': 'xxbu'
+    'body': '\$\\\\boldsymbol{u}\$\ $0'
+
+  'Text Dollar Bold v ':
+    'prefix': 'xxbv'
+    'body': '\$\\\\boldsymbol{v}\$\ $0'
+
+  'Text Dollar Bold w ':
+    'prefix': 'xxbw'
+    'body': '\$\\\\boldsymbol{w}\$\ $0'
+
+  'Text Dollar Bold x ':
+    'prefix': 'xxbx'
+    'body': '\$\\\\boldsymbol{x}\$\ $0'
+
+  'Text Dollar Bold y ':
+    'prefix': 'xxby'
+    'body': '\$\\\\boldsymbol{y}\$\ $0'
+
+  'Text Dollar Bold z ':
+    'prefix': 'xxbz'
+    'body': '\$\\\\boldsymbol{z}\$\ $0'
+
+  'Text Dollar Bold A ':
+    'prefix': 'xxbA'
+    'body': '\$\\\\boldsymbol{A}\$\ $0'
+
+  'Text Dollar Bold B ':
+    'prefix': 'xxbB'
+    'body': '\$\\\\boldsymbol{B}\$\ $0'
+
+  'Text Dollar Bold C ':
+    'prefix': 'xxbC'
+    'body': '\$\\\\boldsymbol{C}\$\ $0'
+
+  'Text Dollar Bold D ':
+    'prefix': 'xxbD'
+    'body': '\$\\\\boldsymbol{D}\$\ $0'
+
+  'Text Dollar Bold E ':
+    'prefix': 'xxbE'
+    'body': '\$\\\\boldsymbol{E}\$\ $0'
+
+  'Text Dollar Bold F ':
+    'prefix': 'xxbF'
+    'body': '\$\\\\boldsymbol{F}\$\ $0'
+
+  'Text Dollar Bold G ':
+    'prefix': 'xxbG'
+    'body': '\$\\\\boldsymbol{G}\$\ $0'
+
+  'Text Dollar Bold H ':
+    'prefix': 'xxbH'
+    'body': '\$\\\\boldsymbol{H}\$\ $0'
+
+  'Text Dollar Bold I ':
+    'prefix': 'xxbI'
+    'body': '\$\\\\boldsymbol{I}\$\ $0'
+
+  'Text Dollar Bold J ':
+    'prefix': 'xxbJ'
+    'body': '\$\\\\boldsymbol{J}\$\ $0'
+
+  'Text Dollar Bold K ':
+    'prefix': 'xxbK'
+    'body': '\$\\\\boldsymbol{K}\$\ $0'
+
+  'Text Dollar Bold L ':
+    'prefix': 'xxbL'
+    'body': '\$\\\\boldsymbol{L}\$\ $0'
+
+  'Text Dollar Bold M ':
+    'prefix': 'xxbM'
+    'body': '\$\\\\boldsymbol{M}\$\ $0'
+
+  'Text Dollar Bold N ':
+    'prefix': 'xxbN'
+    'body': '\$\\\\boldsymbol{N}\$\ $0'
+
+  'Text Dollar Bold O ':
+    'prefix': 'xxbO'
+    'body': '\$\\\\boldsymbol{O}\$\ $0'
+
+  'Text Dollar Bold P ':
+    'prefix': 'xxbP'
+    'body': '\$\\\\boldsymbol{P}\$\ $0'
+
+  'Text Dollar Bold Q ':
+    'prefix': 'xxbQ'
+    'body': '\$\\\\boldsymbol{Q}\$\ $0'
+
+  'Text Dollar Bold R ':
+    'prefix': 'xxbR'
+    'body': '\$\\\\boldsymbol{R}\$\ $0'
+
+  'Text Dollar Bold S ':
+    'prefix': 'xxbS'
+    'body': '\$\\\\boldsymbol{S}\$\ $0'
+
+  'Text Dollar Bold T ':
+    'prefix': 'xxbT'
+    'body': '\$\\\\boldsymbol{T}\$\ $0'
+
+  'Text Dollar Bold U ':
+    'prefix': 'xxbU'
+    'body': '\$\\\\boldsymbol{U}\$\ $0'
+
+  'Text Dollar Bold V ':
+    'prefix': 'xxbV'
+    'body': '\$\\\\boldsymbol{V}\$\ $0'
+
+  'Text Dollar Bold W ':
+    'prefix': 'xxbW'
+    'body': '\$\\\\boldsymbol{W}\$\ $0'
+
+  'Text Dollar Bold X ':
+    'prefix': 'xxbX'
+    'body': '\$\\\\boldsymbol{X}\$\ $0'
+
+  'Text Dollar Bold Y ':
+    'prefix': 'xxbY'
+    'body': '\$\\\\boldsymbol{Y}\$\ $0'
+
+  'Text Dollar Bold Z ':
+    'prefix': 'xxbZ'
+    'body': '\$\\\\boldsymbol{Z}\$\ $0'
+
+ 
+  #-----------------------------------------------------------------------------
+  # Text Script A
+  'Text Script A':
+    'prefix': 'say'
+    'body': '\\\\mathscr{A}\ $0'
+
+  'Text Script B':
+    'prefix': 'sby'
+    'body': '\\\\mathscr{B}\ $0'
+
+  'Text Script C':
+    'prefix': 'scy'
+    'body': '\\\\mathscr{C}\ $0'
+
+  'Text Script D':
+    'prefix': 'sdy'
+    'body': '\\\\mathscr{D}\ $0'
+
+  'Text Script E':
+    'prefix': 'sey'
+    'body': '\\\\mathscr{E}\ $0'
+
+  'Text Script F':
+    'prefix': 'sfy'
+    'body': '\\\\mathscr{F}\ $0'
+
+  'Text Script G':
+    'prefix': 'sgy'
+    'body': '\\\\mathscr{G}\ $0'
+
+  'Text Script H':
+    'prefix': 'shy'
+    'body': '\\\\mathscr{H}\ $0'
+
+  'Text Script I':
+    'prefix': 'siy'
+    'body': '\\\\mathscr{I}\ $0'
+
+  'Text Script J':
+    'prefix': 'sjy'
+    'body': '\\\\mathscr{J}\ $0'
+
+  'Text Script K':
+    'prefix': 'sky'
+    'body': '\\\\mathscr{K}\ $0'
+
+  'Text Script L':
+    'prefix': 'sly'
+    'body': '\\\\mathscr{L}\ $0'
+
+  'Text Script M':
+    'prefix': 'smy'
+    'body': '\\\\mathscr{M}\ $0'
+
+  'Text Script N':
+    'prefix': 'sny'
+    'body': '\\\\mathscr{N}\ $0'
+
+  'Text Script O':
+    'prefix': 'soy'
+    'body': '\\\\mathscr{O}\ $0'
+
+  'Text Script P':
+    'prefix': 'spy'
+    'body': '\\\\mathscr{P}\ $0'
+
+  'Text Script Q':
+    'prefix': 'sqy'
+    'body': '\\\\mathscr{Q}\ $0'
+
+  'Text Script R':
+    'prefix': 'sry'
+    'body': '\\\\mathscr{R}\ $0'
+
+  'Text Script S':
+    'prefix': 'ssy'
+    'body': '\\\\mathscr{S}\ $0'
+
+  'Text Script T':
+    'prefix': 'sty'
+    'body': '\\\\mathscr{T}\ $0'
+
+  'Text Script U':
+    'prefix': 'suy'
+    'body': '\\\\mathscr{U}\ $0'
+
+  'Text Script V':
+    'prefix': 'svy'
+    'body': '\\\\mathscr{V}\ $0'
+
+  'Text Script W':
+    'prefix': 'swy'
+    'body': '\\\\mathscr{W}\ $0'
+
+  'Text Script X':
+    'prefix': 'sxy'
+    'body': '\\\\mathscr{X}\ $0'
+
+  'Text Script Y':
+    'prefix': 'syy'
+    'body': '\\\\mathscr{Y}\ $0'
+
+  'Text Script Z':
+    'prefix': 'szy'
+    'body': '\\\\mathscr{Z}\ $0'
+
+ 
+  #-----------------------------------------------------------------------------
+  # Text Script A Dollar
+  'Text Script A Dollar':
+    'prefix': 'sayx'
+    'body': '\$\\\\mathscr{A}\$\ $0'
+
+  'Text Script B Dollar':
+    'prefix': 'sbyx'
+    'body': '\$\\\\mathscr{B}\$\ $0'
+
+  'Text Script C Dollar':
+    'prefix': 'scyx'
+    'body': '\$\\\\mathscr{C}\$\ $0'
+
+  'Text Script D Dollar':
+    'prefix': 'sdyx'
+    'body': '\$\\\\mathscr{D}\$\ $0'
+
+  'Text Script E Dollar':
+    'prefix': 'seyx'
+    'body': '\$\\\\mathscr{E}\$\ $0'
+
+  'Text Script F Dollar':
+    'prefix': 'sfyx'
+    'body': '\$\\\\mathscr{F}\$\ $0'
+
+  'Text Script G Dollar':
+    'prefix': 'sgyx'
+    'body': '\$\\\\mathscr{G}\$\ $0'
+
+  'Text Script H Dollar':
+    'prefix': 'shyx'
+    'body': '\$\\\\mathscr{H}\$\ $0'
+
+  'Text Script I Dollar':
+    'prefix': 'siyx'
+    'body': '\$\\\\mathscr{I}\$\ $0'
+
+  'Text Script J Dollar':
+    'prefix': 'sjyx'
+    'body': '\$\\\\mathscr{J}\$\ $0'
+
+  'Text Script K Dollar':
+    'prefix': 'skyx'
+    'body': '\$\\\\mathscr{K}\$\ $0'
+
+  'Text Script L Dollar':
+    'prefix': 'slyx'
+    'body': '\$\\\\mathscr{L}\$\ $0'
+
+  'Text Script M Dollar':
+    'prefix': 'smyx'
+    'body': '\$\\\\mathscr{M}\$\ $0'
+
+  'Text Script N Dollar':
+    'prefix': 'snyx'
+    'body': '\$\\\\mathscr{N}\$\ $0'
+
+  'Text Script O Dollar':
+    'prefix': 'soyx'
+    'body': '\$\\\\mathscr{O}\$\ $0'
+
+  'Text Script P Dollar':
+    'prefix': 'spyx'
+    'body': '\$\\\\mathscr{P}\$\ $0'
+
+  'Text Script Q Dollar':
+    'prefix': 'sqyx'
+    'body': '\$\\\\mathscr{Q}\$\ $0'
+
+  'Text Script R Dollar':
+    'prefix': 'sryx'
+    'body': '\$\\\\mathscr{R}\$\ $0'
+
+  'Text Script S Dollar':
+    'prefix': 'ssyx'
+    'body': '\$\\\\mathscr{S}\$\ $0'
+
+  'Text Script T Dollar':
+    'prefix': 'styx'
+    'body': '\$\\\\mathscr{T}\$\ $0'
+
+  'Text Script U Dollar':
+    'prefix': 'suyx'
+    'body': '\$\\\\mathscr{U}\$\ $0'
+
+  'Text Script V Dollar':
+    'prefix': 'svyx'
+    'body': '\$\\\\mathscr{V}\$\ $0'
+
+  'Text Script W Dollar':
+    'prefix': 'swyx'
+    'body': '\$\\\\mathscr{W}\$\ $0'
+
+  'Text Script X Dollar':
+    'prefix': 'sxyx'
+    'body': '\$\\\\mathscr{X}\$\ $0'
+
+  'Text Script Y Dollar':
+    'prefix': 'syyx'
+    'body': '\$\\\\mathscr{Y}\$\ $0'
+
+  'Text Script Z Dollar':
+    'prefix': 'szyx'
+    'body': '\$\\\\mathscr{Z}\$\ $0'
+

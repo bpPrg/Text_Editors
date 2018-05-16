@@ -1,0 +1,60 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+}
+
+// style UI elements inside atom-text-editor
+atom-text-editor .cursor {
+  // border-color: red;
+}
+// Added on June 5, 2017
+// Disable highlight current line
+.editor.is-focused {
+  .line.cursor-line {
+    background: transparent;
+  }
+}
+//Added Aug 21, 2017 Mon
+//Highlight matching brackets inside math mode not working
+atom-text-editor::shadow {
+  .highlights .bracket-matcher .region {
+    background-color: red;
+    transition: background-color 400ms; // cursor blinks at 400ms intervals
+  }
+
+  .cursors.blink-off ~ .highlights .bracket-matcher .region {
+    background-color: yellow;
+  }
+}
+
+// For atom-clock customization
+.atom-clock-icon {
+  color: red;
+}
+
+.atom-clock-time {
+  color: green;
+}

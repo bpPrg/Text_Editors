@@ -1,0 +1,88 @@
+# Author: Bhishan Poudel
+# Date: Apr 2, 2016
+# Last Update: Aug 18, 2017 Fri
+#
+# Additional packages:
+#   script change-case advanced-open-file
+#   atom-shell-commands-config date  open-this
+#   sort-lines sequental-number tool-bar clipboard-plus
+#   toggle-quotes
+#   markdown-preview, markdown-toc, markdown-writer,markdown-preview-enhanced
+#
+# My custom keymaps.
+'atom-text-editor:not([mini])':
+  # Atom basic tools
+  'shift-enter': 'script:run'
+  'alt-left'   : 'tree-view:toggle'  # sidebar showing first opened project
+  'ctrl-;'     : 'command-palette:toggle'
+  'ctrl-s'     : 'window:save-all'
+  # Line manipulations
+  'ctrl-l': 'editor:select-line'
+  'ctrl-/': 'editor:toggle-line-comments'
+  'ctrl-up'  : 'editor:move-line-up'
+  'ctrl-down': 'editor:move-line-down'
+  'ctrl-shift-k' : 'editor:delete-line'
+  # Text manipulations
+  'ctrl-t ctrl-u': 'change-case:upper'
+  'ctrl-t ctrl-l': 'change-case:lower'
+  'ctrl-t ctrl-c': 'change-case:camel'
+  'ctrl-t ctrl-s': 'change-case:swap'
+  'ctrl-t ctrl-t': 'change-case:title'
+  'ctrl-t ctrl-k': 'change-case:kebab'
+  'ctrl-t ctrl-p': 'change-case:param'
+  'ctrl-t ctrl-d': 'change-case:dot'
+  'ctrl-t ctrl-f': 'change-case:upperFirst'
+  'ctrl-t ctrl-n': 'change-case:snake'
+  # Bookmarks
+  'ctrl-1': 'bookmarks:jump-to-previous-bookmark'
+  'ctrl-2': 'bookmarks:toggle-bookmark'
+  'ctrl-3': 'bookmarks:jump-to-next-bookmark'
+  'ctrl-9': 'bookmarks:view-all'
+  'ctrl-0': 'bookmarks:clear-bookmarks'
+  'alt-/': 'advanced-open-file:toggle'
+  'ctrl-alt-o': 'advanced-open-file:toggle'
+  # Mixed
+  'ctrl-alt-s'   : 'spell-check:toggle'
+  'ctrl-alt-m'  : 'bracket-matcher:select-inside-brackets'
+  'ctrl-alt-e'  : 'python-tools:select-all-string'
+  'alt-ctrl-t'   : 'change-case:title'
+  'ctrl-alt-d': 'date:date'
+  # My custom commands **init.coffee**
+  'ctrl-o ctrl-t': 'custom:open-todo-list'
+  'ctrl-o ctrl-b': 'custom:open-bashrc'
+  # open this package open file under cursor
+  'ctrl-o ctrl-o': 'open-this:here'
+  'ctrl-shift-o': 'tree-view:show-current-file-in-file-manager'
+  # expand selection
+  'alt-up': 'expand-region:expand'
+  'alt-down': 'expand-region:shrink'
+  # Multiple Selection Above/Below
+  'ctrl-shift-up': 'editor:add-selection-above'
+  'ctrl-shift-down': 'editor:add-selection-below'
+  'ctrl-shift-right': 'editor:select-to-end-of-line'
+  'ctrl-shift-left': 'editor:select-to-beginning-of-line'
+  # SPELL -CHECK
+  'alt-shift-s': 'spell-check:toggle'
+  'ctrl-shift-t': 'spell-check:correct-misspelling'
+  # sort lines (edit lines)
+  'ctrl-e ctrl-s': 'sort-lines:sort'
+  'ctrl-e ctrl-n': 'sort-lines:natural'
+  'ctrl-e ctrl-u': 'sort-lines:unique'
+  'ctrl-e ctrl-c': 'sort-lines:case-insensitive-sort'
+  'ctrl-e ctrl-r': 'sort-lines:reverse-sort'
+  # Sequential Number (multiple click, or cmd-shifit-up) after that
+  # ctrl alt 0, then type 0 gives 0 1 2
+  # typing 5+2 gives 5,7,9 etc
+  'ctrl-alt-0': 'sequential-number:open'
+  # bracket matcher
+  'ctrl-m': 'bracket-matcher:go-to-matching-bracket'
+  'alt-shift-m': 'bracket-matcher:select-inside-brackets'
+  'ctrl-backspace': 'bracket-matcher:remove-matching-brackets'
+  # DISABLE autocomplete
+  'ctrl-space': 'autocomplete-plus:activate'
+  'ctrl-esc': 'autocomplete-plus:cancel'
+  # Toggle the things
+  'alt-t alt-h': 'toggle:here'
+  'alt-t alt-q': 'toggle-quotes:toggle'
+  'alt-t alt-s': 'tree-view:toggle'
+  'alt-t alt-t': 'tool-bar:toggle'

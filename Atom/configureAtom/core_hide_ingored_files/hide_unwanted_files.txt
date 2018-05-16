@@ -1,0 +1,14 @@
+Author: Bhishan Poudel
+Date  : Sep 19, 2017
+
+Topic: Hide ignored files in tree-view
+=======================================
+
+1. Settings > Packages > Tree View (In the end)
+Check Hide Ignored Files
+Hide VCS ignored files.  (Version Control System Ignored Files)
+
+2. Settings > Core > Ignored files
+Add files for latex compilation files, C compilation files, etc.
+
+.git, .hg, .svn, .DS_Store, ._*, Thumbs.db, desktop.ini, *.bcf, *.acn, *.aux, *.bbl, *.blg, *.fdb_latexmk, *.fls, *.glo, *.ist, *.listing, *.nav, *.out, *.run.xml, *.snm, *.toc, *.vrb, *.pyc, *.o
