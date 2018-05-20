@@ -5,6 +5,7 @@ The text editor *Visual Studio Code* is fast and smart to use.
 - Adam's Toolbar # some tools at bottom pane
 - Atom One Dark Theme # I like this theme.
 - C/C++
+- colorize # in settings add language python `usage: maroon='#800000'`
 - Code Runner # change keybinging to shift enter
 - Guides
 - indent-rainbow
