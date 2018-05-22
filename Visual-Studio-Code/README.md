@@ -17,3 +17,7 @@ The text editor *Visual Studio Code* is fast and smart to use.
 - Rainbow CSV
 - Settings Sync # highly useful, cross-platform sync settings
 - Trailing Spaces
+
+## User settings
+1. Show vertical line
+`"editor.rulers": [80]`
